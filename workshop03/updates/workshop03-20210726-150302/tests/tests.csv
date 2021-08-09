@@ -1,0 +1,9 @@
+ID,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description
+1,a/Bit,HardwareSimulator.sh,a/Bit.tst,yes,,,a/Bit.tst,a/Bit.tst
+2,a/Register,HardwareSimulator.sh,a/Register.tst,yes,,,a/Register.tst,a/Register.tst
+3,a/RAM8,HardwareSimulator.sh,a/RAM8.tst,yes,,,a/RAM8.tst,a/RAM8.tst
+4,a/PC,HardwareSimulator.sh,a/PC.tst,yes,,,a/PC.tst,a/PC.tst
+5,a/RAM64,HardwareSimulator.sh,a/RAM64.tst,yes,,,a/RAM64.tst,a/RAM64.tst
+6,b/RAM512,HardwareSimulator.sh,b/RAM512.tst,yes,,,b/RAM512.tst,b/RAM512.tst
+7,b/RAM4K,HardwareSimulator.sh,b/RAM4K.tst,yes,,,b/RAM4K.tst,b/RAM4K.tst
+8,b/RAM16K,HardwareSimulator.sh,b/RAM16K.tst,yes,,,b/RAM16K.tst,b/RAM16K.tst

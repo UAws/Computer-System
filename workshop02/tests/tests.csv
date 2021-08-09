@@ -1,0 +1,7 @@
+ID,Path,Program,Arguments,Output,Error,Status,Kind,Short-Description,Long-Description
+1,HalfAdder,HardwareSimulator.sh,HalfAdder.tst,yes,no,no,hdl,HalfAdder.tst,HalfAdder.tst
+2,FullAdder,HardwareSimulator.sh,FullAdder.tst,yes,no,no,hdl,FullAdder.tst,FullAdder.tst
+3,Add16,HardwareSimulator.sh,Add16.tst,yes,no,no,hdl,Add16.tst,Add16.tst
+4,Inc16,HardwareSimulator.sh,Inc16.tst,yes,no,no,hdl,Inc16.tst,Inc16.tst
+5,ALU/ALU-nostat,HardwareSimulator.sh,ALU/ALU-nostat.tst,yes,no,no,hdl,ALU/ALU-nostat.tst,ALU/ALU-nostat.tst
+6,ALU/ALU,HardwareSimulator.sh,ALU/ALU.tst,yes,no,no,hdl,ALU/ALU.tst,ALU/ALU.tst

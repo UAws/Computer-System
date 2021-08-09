@@ -1,0 +1,69 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Or16.hdl
+
+/**
+ * 16-bit bitwise Or:
+ * for i = 0..15 out[i] = (a[i] or b[i])
+ */
+
+CHIP Or16 {
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+    Not(in=a[0], out=Nota0);
+    Not(in=a[1], out=Nota1);
+    Not(in=a[2], out=Nota2);
+    Not(in=a[3], out=Nota3);
+    Not(in=a[4], out=Nota4);
+    Not(in=a[5], out=Nota5);
+    Not(in=a[6], out=Nota6);
+    Not(in=a[7], out=Nota7);
+    Not(in=a[8], out=Nota8);
+    Not(in=a[9], out=Nota9);
+    Not(in=a[10], out=Nota10);
+    Not(in=a[11], out=Nota11);
+    Not(in=a[12], out=Nota12);
+    Not(in=a[13], out=Nota13);
+    Not(in=a[14], out=Nota14);
+    Not(in=a[15], out=Nota15);
+    Not(in=a[15], out=Nota16);    
+    
+    Not(in=b[0], out=Notb0);
+    Not(in=b[1], out=Notb1);
+    Not(in=b[2], out=Notb2);
+    Not(in=b[3], out=Notb3);
+    Not(in=b[4], out=Notb4);
+    Not(in=b[5], out=Notb5);
+    Not(in=b[6], out=Notb6);
+    Not(in=b[7], out=Notb7);
+    Not(in=b[8], out=Notb8);
+    Not(in=b[9], out=Notb9);
+    Not(in=b[10], out=Notb10);
+    Not(in=b[11], out=Notb11);
+    Not(in=b[12], out=Notb12);
+    Not(in=b[13], out=Notb13);
+    Not(in=b[14], out=Notb14);
+    Not(in=b[15], out=Notb15);
+    Not(in=b[15], out=Notb16);
+
+    Nand (a=Nota0, b=Notb0, out=out[0]);
+    Nand (a=Nota1, b=Notb1, out=out[1]);
+    Nand (a=Nota2, b=Notb2, out=out[2]);
+    Nand (a=Nota3, b=Notb3, out=out[3]);
+    Nand (a=Nota4, b=Notb4, out=out[4]);
+    Nand (a=Nota5, b=Notb5, out=out[5]);
+    Nand (a=Nota6, b=Notb6, out=out[6]);
+    Nand (a=Nota7, b=Notb7, out=out[7]);
+    Nand (a=Nota8, b=Notb8, out=out[8]);
+    Nand (a=Nota9, b=Notb9, out=out[9]);
+    Nand (a=Nota10, b=Notb10, out=out[10]);
+    Nand (a=Nota11, b=Notb11, out=out[11]);
+    Nand (a=Nota12, b=Notb12, out=out[12]);
+    Nand (a=Nota13, b=Notb13, out=out[13]);
+    Nand (a=Nota14, b=Notb14, out=out[14]);
+    Nand (a=Nota15, b=Notb15, out=out[15]);
+}

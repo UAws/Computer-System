@@ -1,0 +1,16 @@
+ID,Path,Program,Arguments,Output,Error,Status,Kind,Short-Description,Long-Description
+1,Not,HardwareSimulator.sh,Not.tst,yes,,,HDL,Not Chip,Not Chip
+2,And,HardwareSimulator.sh,And.tst,yes,,,HDL,And Chip,And Chip
+3,Or,HardwareSimulator.sh,Or.tst,yes,,,HDL,Or Chip,Or Chip
+4,Xor,HardwareSimulator.sh,Xor.tst,yes,,,HDL,Xor Chip,Xor Chip
+5,Not16,HardwareSimulator.sh,Not16.tst,yes,,,HDL,Not16 Chip,Not16 Chip
+6,And16,HardwareSimulator.sh,And16.tst,yes,,,HDL,And16 Chip,And16 Chip
+7,Or16,HardwareSimulator.sh,Or16.tst,yes,,,HDL,Or16 Chip,Or16 Chip
+8,Or8Way,HardwareSimulator.sh,Or8Way.tst,yes,,,HDL,Or8Way Chip,Or8Way Chip
+9,DMux,HardwareSimulator.sh,DMux.tst,yes,,,HDL,DMux Chip,DMux Chip
+10,DMux4Way,HardwareSimulator.sh,DMux4Way.tst,yes,,,HDL,DMux4Way Chip,DMux4Way Chip
+11,DMux8Way,HardwareSimulator.sh,DMux8Way.tst,yes,,,HDL,DMux8Way Chip,DMux8Way Chip
+12,Mux,HardwareSimulator.sh,Mux.tst,yes,,,HDL,Mux Chip,Mux Chip
+13,Mux16,HardwareSimulator.sh,Mux16.tst,yes,,,HDL,Mux16 Chip,Mux16 Chip
+14,Mux4Way16,HardwareSimulator.sh,Mux4Way16.tst,yes,,,HDL,Mux4Way16 Chip,Mux4Way16 Chip
+15,Mux8Way16,HardwareSimulator.sh,Mux8Way16.tst,yes,,,HDL,Mux8Way16 Chip,Mux8Way16 Chip

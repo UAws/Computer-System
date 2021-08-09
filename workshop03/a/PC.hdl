@@ -1,0 +1,33 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/PC.hdl
+
+/**
+ * A 16-bit counter with load and reset control bits.
+ * if      (reset[t] == 1) out[t+1] = 0
+ * else if (load[t] == 1)  out[t+1] = in[t]
+ * else if (inc[t] == 1)   out[t+1] = out[t] + 1  (integer addition)
+ * else                    out[t+1] = out[t]
+ */
+
+ // https://minio.llycloud.com/image/uPic/image-20210807GEPFU9.png
+ // https://stackoverflow.com/questions/63424576/how-to-implement-clock-into-program-counter
+
+CHIP PC {
+    IN in[16],load,inc,reset;
+    OUT out[16];
+
+    PARTS:
+    // Put your code here:
+
+    Inc16(in=outOfClock, out=outOfInc);
+    Mux16(a=outOfClock, b=outOfInc, sel=inc, out=outOfIncMux);
+    Mux16(a=outOfIncMux, b=in, sel=load, out=outOfLoadMux);
+    Mux16(a=outOfLoadMux, b=false, sel=reset, out=outOfResetMux);
+    Register(in=outOfResetMux,load=true,out=out,out=outOfClock);
+
+
+
+
+}
