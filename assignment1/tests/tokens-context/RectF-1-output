@@ -1,0 +1,50 @@
+Read 26 tokens
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 25
+    {kind: identifier, spelling: "INFINITE", line: 11, column: 5}
+token_context:
+  10:    D=M$
+  11:    @INFINITE
+          ^
+
+----------------
+token: 20
+    {kind: newline, spelling: "\n", line: 10, column: 7}
+token_context:
+   9:    @0$
+  10:    D=M$
+            ^
+
+----------------
+token: 15
+    {kind: space, spelling: " ", line: 10, column: 2}
+token_context:
+   9:    @0$
+  10:   
+       ^
+
+----------------
+token: 10
+    {kind: space, spelling: " ", line: 9, column: 3}
+token_context:
+   8: $
+   9:    
+        ^
+
+----------------
+token: 5
+    {kind: eol_comment, spelling: " Draws a rectangle at the top-left corner of the screen.", line: 6, column: 1}
+token_context:
+   5: $
+   6: // Draws a rectangle at the top-left corner of the screen.$
+      ^
+
+----------------

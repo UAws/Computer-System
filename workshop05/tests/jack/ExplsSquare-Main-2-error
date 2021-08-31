@@ -1,0 +1,5 @@
+***** Fatal error!
+  13:     // Initializes the square game and starts it.\r$
+  14:     function void main()
+                             ^
+Expected: "one of 'a' to 'z' or 'A' to 'Z'" but found: ")"

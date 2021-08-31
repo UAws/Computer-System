@@ -1,0 +1,5 @@
+***** Fatal error!
+  13:  * Use the arrow keys to move the square.\r$
+  14:  * Use '
+             ^
+Expected: character that can start a token but found: "'"

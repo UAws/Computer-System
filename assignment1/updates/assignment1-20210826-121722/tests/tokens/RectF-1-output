@@ -1,0 +1,27 @@
+{kind: eol_comment, spelling: " This file is part of www.nand2tetris.org"}
+{kind: eol_comment, spelling: " and the book "The Elements of Computing Systems""}
+{kind: eol_comment, spelling: " by Nisan and Schocken, MIT Press."}
+{kind: eol_comment, spelling: " File name: projects/06/rect/Rect.asm"}
+{kind: newline, spelling: "\n"}
+{kind: eol_comment, spelling: " Draws a rectangle at the top-left corner of the screen."}
+{kind: eol_comment, spelling: " The rectangle is 16 pixels wide and R0 pixels high."}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "0"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "D"}
+{kind: =, spelling: "="}
+{kind: identifier, spelling: "M"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: @, spelling: "@"}
+{kind: identifier, spelling: "INFINITE"}
+Read 26 tokens

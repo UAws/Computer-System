@@ -1,0 +1,22 @@
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "for"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "do"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: function, spelling: "function"}
+{kind: space, spelling: " "}
+{kind: newline, spelling: "\n"}
+{kind: tab, spelling: "\t"}
+{kind: tab, spelling: "\t"}
+{kind: this, spelling: "this"}
+{kind: newline, spelling: "\n"}
+{kind: procedure, spelling: "procedure"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "pointer"}
+{kind: space, spelling: " "}
+{kind: constructor, spelling: "constructor"}
+{kind: newline, spelling: "\n"}
+Read 21 tokens

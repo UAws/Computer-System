@@ -1,0 +1,5 @@
+{kind: eol_comment, spelling: " this is a test of diff kinds of comments"}
+{kind: newline, spelling: "\n"}
+{kind: eol_comment, spelling: " qwertyuiop խվէրդեըիոբ"}
+{kind: newline, spelling: "\n"}
+Read 4 tokens

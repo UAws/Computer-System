@@ -1,0 +1,17 @@
+{kind:  , spelling: " "}
+{kind: label, spelling: "hello"}
+{kind:  , spelling: " "}
+{kind: label, spelling: "bobis97today"}
+{kind:  , spelling: " "}
+{kind: label, spelling: "again"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: label, spelling: "identifier"}
+{kind:  , spelling: " "}
+{kind: label, spelling: "i8me"}
+{kind:  , spelling: " "}
+{kind: label, spelling: "integer"}
+{kind: \n, spelling: "\n"}
+read 16 tokens

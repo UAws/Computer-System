@@ -1,0 +1,5 @@
+***** Fatal error!
+  11:    D=D-M            // D = first number - second number$
+  12:    @OUTPUT_
+                ^
+Expected: character that can start a token but found: "_"

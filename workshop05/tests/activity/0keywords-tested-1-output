@@ -1,0 +1,22 @@
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: var, spelling: "var"}
+{kind: \n, spelling: "\n"}
+{kind: \n, spelling: "\n"}
+{kind: if, spelling: "if"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: while, spelling: "while"}
+{kind: \n, spelling: "\n"}
+{kind: \t, spelling: "\t"}
+{kind: \t, spelling: "\t"}
+{kind: let, spelling: "let"}
+{kind: \n, spelling: "\n"}
+{kind: else, spelling: "else"}
+{kind:  , spelling: " "}
+{kind: else, spelling: "else"}
+{kind:  , spelling: " "}
+{kind: else, spelling: "else"}
+{kind: \n, spelling: "\n"}
+read 21 tokens

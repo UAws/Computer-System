@@ -1,0 +1,66 @@
+Read 38 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 37
+    {kind: newline, spelling: "\n", line: 1, column: 85}
+token_context:
+   1:  0 4 0.3 3.6e-89 12125.34e9 888E0 34 000.000000E-00008 235.e5 41.4 11. 12 13.e 14 15$
+                                                                                          ^
+
+----------------
+token: 32
+    {kind: scientific, spelling: "1.3e+1", line: 1, column: 75}
+token_context:
+   1:  0 4 0.3 3.6e-89 12125.34e9 888E0 34 000.000000E-00008 235.e5 41.4 11. 12 13.e
+                                                                                ^
+
+----------------
+token: 27
+    {kind: space, spelling: " ", line: 1, column: 67}
+token_context:
+   1:  0 4 0.3 3.6e-89 12125.34e9 888E0 34 000.000000E-00008 235.e5 41.4 
+                                                                        ^
+
+----------------
+token: 22
+    {kind: integer, spelling: "8", line: 1, column: 54}
+token_context:
+   1:  0 4 0.3 3.6e-89 12125.34e9 888E0 34 000.000000E-00008
+                                                           ^
+
+----------------
+token: 17
+    {kind: integer, spelling: "0", line: 1, column: 39}
+token_context:
+   1:  0 4 0.3 3.6e-89 12125.34e9 888E0 34 00
+                                            ^
+
+----------------
+token: 12
+    {kind: identifier, spelling: "E0", line: 1, column: 32}
+token_context:
+   1:  0 4 0.3 3.6e-89 12125.34e9 888E0
+                                     ^
+
+----------------
+token: 7
+    {kind: scientific, spelling: "3.6e-89", line: 1, column: 10}
+token_context:
+   1:  0 4 0.3 3.6e-89
+               ^
+
+----------------
+token: 2
+    {kind: space, spelling: " ", line: 1, column: 3}
+token_context:
+   1:  0 
+        ^
+
+----------------

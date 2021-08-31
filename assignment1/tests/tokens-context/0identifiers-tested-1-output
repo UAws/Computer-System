@@ -1,0 +1,33 @@
+Read 14 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 13
+    {kind: identifier, spelling: "is-computer", line: 3, column: 5}
+token_context:
+   2: $
+   3:     is-computer
+          ^
+
+----------------
+token: 8
+    {kind: newline, spelling: "\n", line: 2, column: 1}
+token_context:
+   1:  hello bobis97today i8me $
+   2: $
+      ^
+
+----------------
+token: 3
+    {kind: identifier, spelling: "bobis97today", line: 1, column: 8}
+token_context:
+   1:  hello bobis97today
+             ^
+
+----------------

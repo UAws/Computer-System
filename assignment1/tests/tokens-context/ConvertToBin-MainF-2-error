@@ -1,0 +1,5 @@
+***** Fatal error!
+  27:     function void main() {\r$
+  28: \tvar int result,
+                     ^
+Expected: character that can start a token but found: ","

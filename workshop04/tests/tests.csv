@@ -1,0 +1,10 @@
+ID,Path,Program,Arguments,Output,Error,Status,Kind,Short-Description,Long-Description
+1,Memoryx,HardwareSimulator.sh,Memoryx.tst,yes,,,hdl,Memoryx.tst,Memoryx.tst
+2,CPU-external,HardwareSimulator.sh,CPU-external.tst,yes,,,hdl,CPU-external.tst,CPU-external.tst
+3,CPU,HardwareSimulator.sh,CPU.tst,yes,,,hdl,CPU.tst,CPU.tst
+4,ComputerAdd-external,HardwareSimulator.sh,ComputerAdd-external.tst,yes,,,hdl,ComputerAdd-external.tst,ComputerAdd-external.tst
+5,ComputerAdd,HardwareSimulator.sh,ComputerAdd.tst,yes,,,hdl,ComputerAdd.tst,ComputerAdd.tst
+6,ComputerMax-external,HardwareSimulator.sh,ComputerMax-external.tst,yes,,,hdl,ComputerMax-external.tst,ComputerMax-external.tst
+7,ComputerMax,HardwareSimulator.sh,ComputerMax.tst,yes,,,hdl,ComputerMax.tst,ComputerMax.tst
+8,ComputerRect-external,HardwareSimulator.sh,ComputerRect-external.tst,yes,,,hdl,ComputerRect-external.tst,ComputerRect-external.tst
+9,ComputerRect,HardwareSimulator.sh,ComputerRect.tst,yes,,,hdl,ComputerRect.tst,ComputerRect.tst

@@ -1,0 +1,146 @@
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "This"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "file"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "is"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "part"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "www"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "nand2tetris"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "org"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "book"}
+{kind:  , spelling: " "}
+{kind: ", spelling: """}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Elements"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Computing"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Systems"}
+{kind: ", spelling: """}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "by"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Nisan"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Schocken"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "MIT"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Press"}
+{kind: ., spelling: "."}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "File"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "name"}
+{kind: :, spelling: ":"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "projects"}
+{kind: /, spelling: "/"}
+{kind: integer, spelling: "0"}
+{kind: integer, spelling: "6"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "rect"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "Rect"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "asm"}
+{kind: \n, spelling: "\n"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Draws"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "rectangle"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "at"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "top"}
+{kind: -, spelling: "-"}
+{kind: identifier, spelling: "left"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "corner"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "screen"}
+{kind: ., spelling: "."}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "rectangle"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "is"}
+{kind:  , spelling: " "}
+{kind: integer, spelling: "16"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "pixels"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "wide"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "R0"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "pixels"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "high"}
+{kind: ., spelling: "."}
+{kind: \n, spelling: "\n"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "0"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "D"}
+{kind: =, spelling: "="}
+{kind: identifier, spelling: "M"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: @, spelling: "@"}
+{kind: identifier, spelling: "INFINITE"}

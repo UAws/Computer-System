@@ -1,0 +1,5 @@
+***** Fatal error!
+  10:      *  methods of the Output class. */\r$
+  11:     function void main()
+                             ^
+Expected: "one of 'a' to 'z' or 'A' to 'Z'" but found: ")"

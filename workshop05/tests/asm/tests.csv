@@ -1,0 +1,12 @@
+ID,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description
+b1,Add,tokeniser,,yes,yes,0,Hack assembler,
+b2,Address,tokeniser,,yes,yes,0,Hack assembler,
+b3,Comp,tokeniser,,yes,yes,0,Hack assembler,
+b4,Dest,tokeniser,,yes,yes,0,Hack assembler,
+b5,DestComp,tokeniser,,yes,yes,0,Hack assembler,
+b6,Jump,tokeniser,,yes,yes,0,Hack assembler,
+b7,Max,tokeniser,,yes,yes,0,Hack assembler,
+b8,MaxL,tokeniser,,yes,yes,0,Hack assembler,
+b9,Numerical,tokeniser,,yes,yes,0,Hack assembler,
+b10,Rect,tokeniser,,yes,yes,0,Hack assembler,
+b11,RectL,tokeniser,,yes,yes,0,Hack assembler,

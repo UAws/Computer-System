@@ -1,0 +1,47 @@
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind: +, spelling: "+"}
+{kind: =, spelling: "="}
+{kind: identifier, spelling: "b"}
+{kind: /, spelling: "/"}
+{kind: =, spelling: "="}
+{kind: integer, spelling: "3"}
+{kind: *=, spelling: "*="}
+{kind: integer, spelling: "1"}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: integer, spelling: "38"}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: -, spelling: "-"}
+{kind: =, spelling: "="}
+{kind: /, spelling: "/"}
+{kind: =, spelling: "="}
+{kind: ., spelling: "."}
+{kind: >>>, spelling: ">>>"}
+{kind: >>>, spelling: ">>>"}
+{kind: >>, spelling: ">>"}
+{kind: <<<, spelling: "<<<"}
+{kind: <<<, spelling: "<<<"}
+{kind: <<<, spelling: "<<<"}
+{kind: <<, spelling: "<<"}
+{kind: integer, spelling: "832"}
+{kind: newline, spelling: "\n"}
+Read 46 tokens

@@ -1,0 +1,5 @@
+***** Fatal error!
+  19:     /** Constructs a new square with a given location and size. */\r$
+  20:     constructor Square new(int 
+                                    ^
+Expected: ")" but found: " "

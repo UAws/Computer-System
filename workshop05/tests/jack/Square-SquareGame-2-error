@@ -1,0 +1,5 @@
+***** Fatal error!
+  11:  * of the screen. The arrow keys are used to move the square.\r$
+  12:  * The '
+             ^
+Expected: character that can start a token but found: "'"

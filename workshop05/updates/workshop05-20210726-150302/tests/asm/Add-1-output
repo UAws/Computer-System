@@ -1,0 +1,117 @@
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "This"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "file"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "is"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "part"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "www"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "nand2tetris"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "org"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "book"}
+{kind:  , spelling: " "}
+{kind: ", spelling: """}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Elements"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Computing"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Systems"}
+{kind: ", spelling: """}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "by"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Nisan"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Schocken"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "MIT"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Press"}
+{kind: ., spelling: "."}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "File"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "name"}
+{kind: :, spelling: ":"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "projects"}
+{kind: /, spelling: "/"}
+{kind: integer, spelling: "0"}
+{kind: integer, spelling: "6"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "add"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "Add"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "asm"}
+{kind: \n, spelling: "\n"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Computes"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "R0"}
+{kind:  , spelling: " "}
+{kind: =, spelling: "="}
+{kind:  , spelling: " "}
+{kind: integer, spelling: "2"}
+{kind:  , spelling: " "}
+{kind: +, spelling: "+"}
+{kind:  , spelling: " "}
+{kind: integer, spelling: "3"}
+{kind: \n, spelling: "\n"}
+{kind: \n, spelling: "\n"}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "2"}
+{kind: \n, spelling: "\n"}
+{kind: identifier, spelling: "D"}
+{kind: =, spelling: "="}
+{kind: identifier, spelling: "A"}
+{kind: \n, spelling: "\n"}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "3"}
+{kind: \n, spelling: "\n"}
+{kind: identifier, spelling: "D"}
+{kind: =, spelling: "="}
+{kind: identifier, spelling: "D"}
+{kind: +, spelling: "+"}
+{kind: identifier, spelling: "A"}
+{kind: \n, spelling: "\n"}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "0"}
+{kind: \n, spelling: "\n"}
+{kind: identifier, spelling: "M"}
+{kind: =, spelling: "="}
+{kind: identifier, spelling: "D"}
+{kind: \n, spelling: "\n"}
+read 116 tokens

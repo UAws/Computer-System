@@ -1,0 +1,5 @@
+***** Fatal error!
+  11:     /** Initializes a new game and starts it. */    \r$
+  12:     function void main()
+                             ^
+Expected: "one of 'a' to 'z' or 'A' to 'Z'" but found: ")"

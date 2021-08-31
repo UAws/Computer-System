@@ -1,0 +1,285 @@
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "This"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "file"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "is"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "part"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "www"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "nand2tetris"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "org"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "book"}
+{kind:  , spelling: " "}
+{kind: ", spelling: """}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Elements"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Computing"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Systems"}
+{kind: ", spelling: """}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "by"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Nisan"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Schocken"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "MIT"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Press"}
+{kind: ., spelling: "."}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "File"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "name"}
+{kind: :, spelling: ":"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "projects"}
+{kind: /, spelling: "/"}
+{kind: integer, spelling: "0"}
+{kind: integer, spelling: "9"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "Square"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "Square"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "jack"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: *, spelling: "*"}
+{kind: *, spelling: "*"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Implements"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "graphic"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "square"}
+{kind: ., spelling: "."}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "A"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "graphic"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "square"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "has"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "screen"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "location"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "size"}
+{kind: ., spelling: "."}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "It"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "also"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "has"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "methods"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "for"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "drawing"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "erasing"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "moving"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "on"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "screen"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "changing"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "its"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "size"}
+{kind: ., spelling: "."}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind: /, spelling: "/"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Square"}
+{kind:  , spelling: " "}
+{kind: {, spelling: "{"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Location"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "on"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "screen"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "field"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "int"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "x"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "y"}
+{kind: ;, spelling: ";"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "size"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "square"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "field"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "int"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "size"}
+{kind: ;, spelling: ";"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: /, spelling: "/"}
+{kind: *, spelling: "*"}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Constructs"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "new"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "square"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "with"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "given"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "location"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "size"}
+{kind: ., spelling: "."}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind: /, spelling: "/"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "constructor"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Square"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "new"}

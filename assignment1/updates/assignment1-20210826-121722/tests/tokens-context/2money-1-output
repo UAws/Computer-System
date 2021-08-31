@@ -1,0 +1,26 @@
+Read 8 tokens
+Token Contexts:
+
+token: 0
+    {kind: identifier, spelling: "$50.20", line: 1, column: 1}
+token_context:
+   1: $50.20
+      ^
+
+----------------
+token: 7
+    {kind: newline, spelling: "\n", line: 4, column: 8}
+token_context:
+   3: $5.23$
+   4: $100.00$
+             ^
+
+----------------
+token: 2
+    {kind: identifier, spelling: "$1000000.23", line: 2, column: 1}
+token_context:
+   1: $50.20$
+   2: $1000000.23
+      ^
+
+----------------

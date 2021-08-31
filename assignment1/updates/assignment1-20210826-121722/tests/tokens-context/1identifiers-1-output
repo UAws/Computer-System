@@ -1,0 +1,81 @@
+Read 46 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 45
+    {kind: newline, spelling: "\n", line: 10, column: 4}
+token_context:
+   9:     $ is it missing$
+  10:    $
+         ^
+
+----------------
+token: 40
+    {kind: identifier, spelling: "missing", line: 9, column: 13}
+token_context:
+   8: $
+   9:     $ is it missing
+                  ^
+
+----------------
+token: 35
+    {kind: space, spelling: " ", line: 9, column: 6}
+token_context:
+   8: $
+   9:     $ 
+           ^
+
+----------------
+token: 30
+    {kind: space, spelling: " ", line: 9, column: 1}
+token_context:
+   8: $
+   9:  
+      ^
+
+----------------
+token: 25
+    {kind: space, spelling: " ", line: 7, column: 7}
+token_context:
+   6:  $
+   7:     $. 
+            ^
+
+----------------
+token: 20
+    {kind: space, spelling: " ", line: 7, column: 1}
+token_context:
+   6:  $
+   7:  
+      ^
+
+----------------
+token: 15
+    {kind: newline, spelling: "\n", line: 4, column: 1}
+token_context:
+   3:     is-computer-systems----$
+   4: $
+      ^
+
+----------------
+token: 10
+    {kind: space, spelling: " ", line: 3, column: 2}
+token_context:
+   2: $
+   3:   
+       ^
+
+----------------
+token: 5
+    {kind: identifier, spelling: "i8me", line: 1, column: 21}
+token_context:
+   1:  hello bobis97today i8me
+                          ^
+
+----------------

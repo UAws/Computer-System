@@ -1,0 +1,82 @@
+Read 46 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 45
+    {kind: newline, spelling: "\n", line: 6, column: 10}
+token_context:
+   5: @ .@    $
+   6:  ~ + - / $
+               ^
+
+----------------
+token: 40
+    {kind: space, spelling: " ", line: 6, column: 5}
+token_context:
+   5: @ .@    $
+   6:  ~ + 
+          ^
+
+----------------
+token: 35
+    {kind: newline, spelling: "\n", line: 5, column: 9}
+token_context:
+   4: .]   $
+   5: @ .@    $
+              ^
+
+----------------
+token: 30
+    {kind: @, spelling: "@", line: 5, column: 4}
+token_context:
+   4: .]   $
+   5: @ .@
+         ^
+
+----------------
+token: 25
+    {kind: space, spelling: " ", line: 4, column: 5}
+token_context:
+   3:  ( ) = [)  $
+   4: .]   
+          ^
+
+----------------
+token: 20
+    {kind: newline, spelling: "\n", line: 3, column: 12}
+token_context:
+   2:  }..$
+   3:  ( ) = [)  $
+                 ^
+
+----------------
+token: 15
+    {kind: space, spelling: " ", line: 3, column: 7}
+token_context:
+   2:  }..$
+   3:  ( ) = 
+            ^
+
+----------------
+token: 10
+    {kind: (, spelling: "(", line: 3, column: 2}
+token_context:
+   2:  }..$
+   3:  (
+       ^
+
+----------------
+token: 5
+    {kind: }, spelling: "}", line: 2, column: 2}
+token_context:
+   1:  { $
+   2:  }
+       ^
+
+----------------

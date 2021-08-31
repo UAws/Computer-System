@@ -1,0 +1,5 @@
+***** Fatal error!
+   5: \r$
+   6: /**
+        ^
+Expected: "=" but found: "*"

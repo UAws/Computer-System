@@ -1,0 +1,5 @@
+***** Fatal error!
+   4: @23$
+   5: D;
+       ^
+Expected: character that can start a token but found: ";"

@@ -1,0 +1,154 @@
+Read 88 tokens
+Token Contexts:
+
+token: 0
+    {kind: tab, spelling: "\t", line: 1, column: 1}
+token_context:
+   1: \t
+      ^
+
+----------------
+token: 87
+    {kind: newline, spelling: "\n", line: 44, column: 5}
+token_context:
+  43: procedure$
+  44: this$
+          ^
+
+----------------
+token: 82
+    {kind: if-goto, spelling: "if-goto", line: 42, column: 1}
+token_context:
+  41: function$
+  42: if-goto
+      ^
+
+----------------
+token: 77
+    {kind: eol_comment, spelling: " \r\r վհկվհհ", line: 39, column: 1}
+token_context:
+  38: # hheheheh  \r xլլ$
+  39: // \r\r վհկվհհ$
+      ^
+
+----------------
+token: 72
+    {kind: ], spelling: "]", line: 36, column: 1}
+token_context:
+  35: [$
+  36: ]
+      ^
+
+----------------
+token: 67
+    {kind: newline, spelling: "\n", line: 33, column: 2}
+token_context:
+  32: }$
+  33: ($
+       ^
+
+----------------
+token: 62
+    {kind: {, spelling: "{", line: 31, column: 1}
+token_context:
+  30: >>$
+  31: {
+      ^
+
+----------------
+token: 57
+    {kind: newline, spelling: "\n", line: 28, column: 3}
+token_context:
+  27: <<<$
+  28: <<$
+        ^
+
+----------------
+token: 52
+    {kind: ==, spelling: "==", line: 26, column: 1}
+token_context:
+  25: ~=$
+  26: ==
+      ^
+
+----------------
+token: 47
+    {kind: newline, spelling: "\n", line: 23, column: 2}
+token_context:
+  22: +$
+  23: /$
+       ^
+
+----------------
+token: 42
+    {kind: -, spelling: "-", line: 21, column: 1}
+token_context:
+  20: =$
+  21: -
+      ^
+
+----------------
+token: 37
+    {kind: newline, spelling: "\n", line: 18, column: 2}
+token_context:
+  17: "ప"$
+  18: @$
+       ^
+
+----------------
+token: 32
+    {kind: scientific, spelling: "7e+0", line: 16, column: 1}
+token_context:
+  15: 5.e0$
+  16: 7.e-
+      ^
+
+----------------
+token: 27
+    {kind: newline, spelling: "\n", line: 13, column: 4}
+token_context:
+  12: 4.$
+  13: 4.e$
+         ^
+
+----------------
+token: 22
+    {kind: scientific, spelling: "0", line: 11, column: 1}
+token_context:
+  10: 0.0000000003$
+  11: 0.0000e+3556
+      ^
+
+----------------
+token: 17
+    {kind: newline, spelling: "\n", line: 8, column: 6}
+token_context:
+   7: 0e$
+   8: 32.40$
+           ^
+
+----------------
+token: 12
+    {kind: newline, spelling: "\n", line: 6, column: 4}
+token_context:
+   5: 0$
+   6: 146$
+         ^
+
+----------------
+token: 7
+    {kind: identifier, spelling: "$php3.6", line: 4, column: 1}
+token_context:
+   3: aA0-$..92$
+   4: $php3.6
+      ^
+
+----------------
+token: 2
+    {kind: carriage_return, spelling: "\r", line: 2, column: 1}
+token_context:
+   1: \t$
+   2: \r
+      ^
+
+----------------

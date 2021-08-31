@@ -1,0 +1,73 @@
+Read 46 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 45
+    {kind: newline, spelling: "\n", line: 1, column: 62}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=-=-=-=-=/=.>>>>>>>><<<<<<<<<<<832$
+                                                                   ^
+
+----------------
+token: 40
+    {kind: <<<, spelling: "<<<", line: 1, column: 48}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=-=-=-=-=/=.>>>>>>>><<<
+                                                     ^
+
+----------------
+token: 35
+    {kind: =, spelling: "=", line: 1, column: 38}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=-=-=-=-=/=
+                                           ^
+
+----------------
+token: 30
+    {kind: -, spelling: "-", line: 1, column: 33}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=-=-=-
+                                      ^
+
+----------------
+token: 25
+    {kind: =, spelling: "=", line: 1, column: 28}
+token_context:
+   1:         a+=b/=3*=1-=38-=-=-=
+                                 ^
+
+----------------
+token: 20
+    {kind: -, spelling: "-", line: 1, column: 23}
+token_context:
+   1:         a+=b/=3*=1-=38-
+                            ^
+
+----------------
+token: 15
+    {kind: *=, spelling: "*=", line: 1, column: 16}
+token_context:
+   1:         a+=b/=3*=
+                     ^
+
+----------------
+token: 10
+    {kind: =, spelling: "=", line: 1, column: 11}
+token_context:
+   1:         a+=
+                ^
+
+----------------
+token: 5
+    {kind: space, spelling: " ", line: 1, column: 6}
+token_context:
+   1:       
+           ^
+
+----------------

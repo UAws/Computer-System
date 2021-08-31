@@ -1,0 +1,4 @@
+***** Fatal error!
+   1:         D&
+               ^
+Expected: character that can start a token but found: "&"

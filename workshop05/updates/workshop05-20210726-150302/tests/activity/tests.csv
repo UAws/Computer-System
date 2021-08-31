@@ -1,0 +1,9 @@
+ID,Path,Program,Arguments,Output,Error,Status,Kind,Short-Description,Long-Description
+a1,0identifiers,tokeniser,,yes,yes,0,filter,Activity test,
+a2,0keywords,tokeniser,,yes,yes,0,filter,Activity test,
+a3,0numbers,tokeniser,,yes,yes,0,filter,Activity test,
+a4,1char-ops,tokeniser,,yes,yes,0,filter,Activity test,
+a5,1char-symbols,tokeniser,,yes,yes,0,filter,Activity test,
+a6,1char-varops,tokeniser,,yes,yes,0,filter,Activity test,
+a7,2char-varops,tokeniser,,yes,yes,0,filter,Activity test,
+a8,0labels,tokeniser,,yes,yes,0,filter,Activity test,

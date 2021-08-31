@@ -1,0 +1,42 @@
+Read 21 tokens
+Token Contexts:
+
+token: 0
+    {kind: space, spelling: " ", line: 1, column: 1}
+token_context:
+   1:  
+      ^
+
+----------------
+token: 20
+    {kind: newline, spelling: "\n", line: 5, column: 30}
+token_context:
+   4: \t\tthis$
+   5: procedure pointer constructor$
+                                   ^
+
+----------------
+token: 15
+    {kind: procedure, spelling: "procedure", line: 5, column: 1}
+token_context:
+   4: \t\tthis$
+   5: procedure
+      ^
+
+----------------
+token: 10
+    {kind: newline, spelling: "\n", line: 3, column: 14}
+token_context:
+   2: $
+   3: do  function $
+                   ^
+
+----------------
+token: 5
+    {kind: identifier, spelling: "do", line: 3, column: 1}
+token_context:
+   2: $
+   3: do
+      ^
+
+----------------

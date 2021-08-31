@@ -1,0 +1,13 @@
+{kind: newline, spelling: "\n"}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "0"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "D"}
+{kind: =, spelling: "="}
+{kind: identifier, spelling: "M"}
+{kind: newline, spelling: "\n"}
+{kind: @, spelling: "@"}
+{kind: integer, spelling: "23"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "D"}
+Read 12 tokens

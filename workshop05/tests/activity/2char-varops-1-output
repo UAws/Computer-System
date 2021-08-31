@@ -1,0 +1,23 @@
+{kind:  , spelling: " "}
+{kind: <=, spelling: "<="}
+{kind:  , spelling: " "}
+{kind: ==, spelling: "=="}
+{kind:  , spelling: " "}
+{kind: !=, spelling: "!="}
+{kind:  , spelling: " "}
+{kind: >=, spelling: ">="}
+{kind: \n, spelling: "\n"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: >=, spelling: ">="}
+{kind: ==, spelling: "=="}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: <, spelling: "<"}
+{kind: <, spelling: "<"}
+{kind:  , spelling: " "}
+{kind: >, spelling: ">"}
+{kind: >, spelling: ">"}
+{kind: \n, spelling: "\n"}
+read 22 tokens

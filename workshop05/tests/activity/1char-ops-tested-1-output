@@ -1,0 +1,25 @@
+{kind:  , spelling: " "}
+{kind: +, spelling: "+"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: -, spelling: "-"}
+{kind:  , spelling: " "}
+{kind: -, spelling: "-"}
+{kind: -, spelling: "-"}
+{kind: -, spelling: "-"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind: +, spelling: "+"}
+{kind: +, spelling: "+"}
+{kind:  , spelling: " "}
+{kind: \n, spelling: "\n"}
+{kind: \t, spelling: "\t"}
+{kind: -, spelling: "-"}
+{kind: \n, spelling: "\n"}
+read 24 tokens

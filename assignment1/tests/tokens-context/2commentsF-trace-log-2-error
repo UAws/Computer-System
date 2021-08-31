@@ -1,0 +1,5 @@
+***** Fatal error!
+   4: $
+   5: # խվէրդեըիոբ…
+                  ^
+Expected: "\n" but found: "…"

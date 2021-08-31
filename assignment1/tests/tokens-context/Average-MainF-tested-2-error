@@ -1,0 +1,5 @@
+***** Fatal error!
+   8:     function void main() {\r$
+   9:         var Array a;
+                         ^
+Expected: character that can start a token but found: ";"

@@ -1,0 +1,5 @@
+***** Fatal error!
+   5: " would it fail in the right place$
+   6: 
+      ^
+Expected: "\"" but found: "\n"

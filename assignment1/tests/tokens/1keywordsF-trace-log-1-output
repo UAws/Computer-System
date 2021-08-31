@@ -1,0 +1,27 @@
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: constructor, spelling: "constructor"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "done"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: if-goto, spelling: "if-goto"}
+{kind: newline, spelling: "\n"}
+{kind: tab, spelling: "\t"}
+{kind: tab, spelling: "\t"}
+{kind: this, spelling: "this"}
+{kind: newline, spelling: "\n"}
+{kind: identifier, spelling: "done"}
+{kind: space, spelling: " "}
+{kind: procedure, spelling: "procedure"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "while"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "$this"}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+Read 26 tokens

@@ -1,0 +1,5 @@
+***** Fatal error!
+   8:  * Has methods for drawing, erasing and moving on the screen.\r$
+   9:  * The ball'
+                 ^
+Expected: character that can start a token but found: "'"

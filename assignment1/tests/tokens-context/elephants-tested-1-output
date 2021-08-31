@@ -1,0 +1,17 @@
+Read 2 tokens
+Token Contexts:
+
+token: 0
+    {kind: identifier, spelling: "elephants", line: 1, column: 1}
+token_context:
+   1: elephants
+      ^
+
+----------------
+token: 1
+    {kind: newline, spelling: "\n", line: 1, column: 10}
+token_context:
+   1: elephants$
+               ^
+
+----------------

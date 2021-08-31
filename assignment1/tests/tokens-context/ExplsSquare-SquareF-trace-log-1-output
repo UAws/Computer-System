@@ -1,0 +1,26 @@
+Read 10 tokens
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org\r", line: 1, column: 1}
+token_context:
+   1: // This file is part of www.nand2tetris.org\r$
+      ^
+
+----------------
+token: 9
+    {kind: /, spelling: "/", line: 8, column: 1}
+token_context:
+   7: \r$
+   8: /
+      ^
+
+----------------
+token: 4
+    {kind: carriage_return, spelling: "\r", line: 5, column: 1}
+token_context:
+   4: // File name: projects/10/ExpressionlessSquare/Square.jack\r$
+   5: \r
+      ^
+
+----------------

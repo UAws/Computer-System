@@ -1,0 +1,178 @@
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "This"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "file"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "is"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "part"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "www"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "nand2tetris"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "org"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "book"}
+{kind:  , spelling: " "}
+{kind: ", spelling: """}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Elements"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Computing"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Systems"}
+{kind: ", spelling: """}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "by"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Nisan"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Schocken"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "MIT"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Press"}
+{kind: ., spelling: "."}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "File"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "name"}
+{kind: :, spelling: ":"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "projects"}
+{kind: /, spelling: "/"}
+{kind: integer, spelling: "10"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "ExpressionlessSquare"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "Main"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "jack"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Expressionless"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "version"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Main"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "jack"}
+{kind: ., spelling: "."}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: *, spelling: "*"}
+{kind: *, spelling: "*"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Main"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "class"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "initializes"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "a"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "new"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Square"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Dance"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "game"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "starts"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "it"}
+{kind: ., spelling: "."}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind: /, spelling: "/"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Main"}
+{kind:  , spelling: " "}
+{kind: {, spelling: "{"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Initializes"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "square"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "game"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "starts"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "it"}
+{kind: ., spelling: "."}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "function"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "void"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "main"}

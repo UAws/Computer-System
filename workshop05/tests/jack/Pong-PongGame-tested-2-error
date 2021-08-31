@@ -1,0 +1,5 @@
+***** Fatal error!
+  35:     /** Constructs a new Pong Game. */\r$
+  36:     constructor PongGame new()
+                                   ^
+Expected: "one of 'a' to 'z' or 'A' to 'Z'" but found: ")"

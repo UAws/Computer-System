@@ -1,0 +1,32 @@
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Main"}
+{kind:  , spelling: " "}
+{kind: {, spelling: "{"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "function"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "void"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "main"}

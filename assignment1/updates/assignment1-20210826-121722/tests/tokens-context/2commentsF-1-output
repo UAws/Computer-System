@@ -1,0 +1,18 @@
+Read 4 tokens
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " this is a test of diff kinds of comments", line: 1, column: 1}
+token_context:
+   1: // this is a test of diff kinds of comments$
+      ^
+
+----------------
+token: 3
+    {kind: newline, spelling: "\n", line: 4, column: 1}
+token_context:
+   3: // qwertyuiop խվէրդեըիոբ$
+   4: $
+      ^
+
+----------------

@@ -1,0 +1,5 @@
+***** Fatal error!
+   2: $
+   3:     is-computer_
+                     ^
+Expected: character that can start a token but found: "_"

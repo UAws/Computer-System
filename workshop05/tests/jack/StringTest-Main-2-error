@@ -1,0 +1,5 @@
+***** Fatal error!
+   9:     /** Performs several string manipulations and prints their results. */\r$
+  10:     function void main()
+                             ^
+Expected: "one of 'a' to 'z' or 'A' to 'Z'" but found: ")"

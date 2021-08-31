@@ -1,0 +1,5 @@
+***** Fatal error!
+   6: /**\r$
+   7:  * Computes the value of 1 + (2
+                                    ^
+Expected: "one of 'a' to 'z' or 'A' to 'Z'" but found: "2"

@@ -1,0 +1,15 @@
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "hello"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "bobis97today"}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "i8me"}
+{kind: space, spelling: " "}
+{kind: newline, spelling: "\n"}
+{kind: newline, spelling: "\n"}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: space, spelling: " "}
+{kind: identifier, spelling: "is-computer"}
+Read 14 tokens

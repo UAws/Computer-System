@@ -1,0 +1,151 @@
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "This"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "file"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "is"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "part"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "www"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "nand2tetris"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "org"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "book"}
+{kind:  , spelling: " "}
+{kind: ", spelling: """}
+{kind: identifier, spelling: "The"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Elements"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "of"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Computing"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Systems"}
+{kind: ", spelling: """}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "by"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Nisan"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "and"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Schocken"}
+{kind: ,, spelling: ","}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "MIT"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Press"}
+{kind: ., spelling: "."}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: /, spelling: "/"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "File"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "name"}
+{kind: :, spelling: ":"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "projects"}
+{kind: /, spelling: "/"}
+{kind: integer, spelling: "12"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "MathTest"}
+{kind: /, spelling: "/"}
+{kind: identifier, spelling: "Main"}
+{kind: ., spelling: "."}
+{kind: identifier, spelling: "jack"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: /, spelling: "/"}
+{kind: *, spelling: "*"}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Test"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "program"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "for"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "OS"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Math"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "class"}
+{kind: ., spelling: "."}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind: /, spelling: "/"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: identifier, spelling: "class"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Main"}
+{kind:  , spelling: " "}
+{kind: {, spelling: "{"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: /, spelling: "/"}
+{kind: *, spelling: "*"}
+{kind: *, spelling: "*"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Performs"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "several"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "mathematical"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "operations"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "from"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "the"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "Math"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "class"}
+{kind: ., spelling: "."}
+{kind:  , spelling: " "}
+{kind: *, spelling: "*"}
+{kind: /, spelling: "/"}
+{kind: \r, spelling: "\r"}
+{kind: \n, spelling: "\n"}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "function"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "void"}
+{kind:  , spelling: " "}
+{kind: identifier, spelling: "main"}

@@ -1,0 +1,18 @@
+Read 6 tokens
+Token Contexts:
+
+token: 0
+    {kind: string, spelling: " strings can be trick things ", line: 1, column: 1}
+token_context:
+   1: " strings can be trick things "
+      ^
+
+----------------
+token: 5
+    {kind: newline, spelling: "\n", line: 4, column: 1}
+token_context:
+   3: " what if we put odd ౌైాీూబహగదజ stuff in here? "$
+   4: $
+      ^
+
+----------------

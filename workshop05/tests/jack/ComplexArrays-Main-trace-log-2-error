@@ -1,0 +1,5 @@
+***** Fatal error!
+  12: \r$
+  13:     function void main()
+                             ^
+Expected: "one of 'a' to 'z' or 'A' to 'Z'" but found: ")"

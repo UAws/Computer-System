@@ -1,0 +1,145 @@
+Read 82 tokens
+Token Contexts:
+
+token: 0
+    {kind: carriage_return, spelling: "\r", line: 1, column: 1}
+token_context:
+   1: \r
+      ^
+
+----------------
+token: 81
+    {kind: identifier, spelling: "result", line: 28, column: 10}
+token_context:
+  27:     function void main() {\r$
+  28: \tvar int result
+               ^
+
+----------------
+token: 76
+    {kind: tab, spelling: "\t", line: 28, column: 1}
+token_context:
+  27:     function void main() {\r$
+  28: \t
+      ^
+
+----------------
+token: 71
+    {kind: ), spelling: ")", line: 27, column: 24}
+token_context:
+  26: \r$
+  27:     function void main()
+                             ^
+
+----------------
+token: 66
+    {kind: space, spelling: " ", line: 27, column: 13}
+token_context:
+  26: \r$
+  27:     function 
+                  ^
+
+----------------
+token: 61
+    {kind: space, spelling: " ", line: 27, column: 1}
+token_context:
+  26: \r$
+  27:  
+      ^
+
+----------------
+token: 56
+    {kind: newline, spelling: "\n", line: 24, column: 2}
+token_context:
+  23: \r$
+  24: \r$
+       ^
+
+----------------
+token: 51
+    {kind: carriage_return, spelling: "\r", line: 22, column: 5}
+token_context:
+  21: class Main {\r$
+  22:     \r
+          ^
+
+----------------
+token: 46
+    {kind: newline, spelling: "\n", line: 21, column: 14}
+token_context:
+  20: \r$
+  21: class Main {\r$
+                   ^
+
+----------------
+token: 41
+    {kind: space, spelling: " ", line: 21, column: 6}
+token_context:
+  20: \r$
+  21: class 
+           ^
+
+----------------
+token: 36
+    {kind: carriage_return, spelling: "\r", line: 19, column: 1}
+token_context:
+  18: \r$
+  19: \r
+      ^
+
+----------------
+token: 31
+    {kind: newline, spelling: "\n", line: 16, column: 2}
+token_context:
+  15: \r$
+  16: \r$
+       ^
+
+----------------
+token: 26
+    {kind: carriage_return, spelling: "\r", line: 14, column: 1}
+token_context:
+  13: \r$
+  14: \r
+      ^
+
+----------------
+token: 21
+    {kind: newline, spelling: "\n", line: 11, column: 2}
+token_context:
+  10: \r$
+  11: \r$
+       ^
+
+----------------
+token: 16
+    {kind: carriage_return, spelling: "\r", line: 9, column: 1}
+token_context:
+   8: \r$
+   9: \r
+      ^
+
+----------------
+token: 11
+    {kind: newline, spelling: "\n", line: 6, column: 2}
+token_context:
+   5: \r$
+   6: \r$
+       ^
+
+----------------
+token: 6
+    {kind: carriage_return, spelling: "\r", line: 4, column: 1}
+token_context:
+   3: \r$
+   4: \r
+      ^
+
+----------------
+token: 1
+    {kind: newline, spelling: "\n", line: 1, column: 2}
+token_context:
+   1: \r$
+       ^
+
+----------------

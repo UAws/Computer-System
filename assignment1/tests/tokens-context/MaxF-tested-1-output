@@ -1,0 +1,114 @@
+Read 64 tokens
+Token Contexts:
+
+token: 0
+    {kind: eol_comment, spelling: " This file is part of www.nand2tetris.org", line: 1, column: 1}
+token_context:
+   1: // This file is part of www.nand2tetris.org$
+      ^
+
+----------------
+token: 63
+    {kind: identifier, spelling: "OUTPUT", line: 12, column: 5}
+token_context:
+  11:    D=D-M            // D = first number - second number$
+  12:    @OUTPUT
+          ^
+
+----------------
+token: 58
+    {kind: eol_comment, spelling: " D = first number - second number", line: 11, column: 21}
+token_context:
+  10:    @R1$
+  11:    D=D-M            // D = first number - second number$
+                          ^
+
+----------------
+token: 53
+    {kind: space, spelling: " ", line: 11, column: 16}
+token_context:
+  10:    @R1$
+  11:    D=D-M        
+                     ^
+
+----------------
+token: 48
+    {kind: space, spelling: " ", line: 11, column: 11}
+token_context:
+  10:    @R1$
+  11:    D=D-M   
+                ^
+
+----------------
+token: 43
+    {kind: identifier, spelling: "D", line: 11, column: 4}
+token_context:
+  10:    @R1$
+  11:    D
+         ^
+
+----------------
+token: 38
+    {kind: identifier, spelling: "R1", line: 10, column: 5}
+token_context:
+   9:    D=M              // D = first number$
+  10:    @R1
+          ^
+
+----------------
+token: 33
+    {kind: eol_comment, spelling: " D = first number", line: 9, column: 21}
+token_context:
+   8:    @R0$
+   9:    D=M              // D = first number$
+                          ^
+
+----------------
+token: 28
+    {kind: space, spelling: " ", line: 9, column: 16}
+token_context:
+   8:    @R0$
+   9:    D=M          
+                     ^
+
+----------------
+token: 23
+    {kind: space, spelling: " ", line: 9, column: 11}
+token_context:
+   8:    @R0$
+   9:    D=M     
+                ^
+
+----------------
+token: 18
+    {kind: identifier, spelling: "M", line: 9, column: 6}
+token_context:
+   8:    @R0$
+   9:    D=M
+           ^
+
+----------------
+token: 13
+    {kind: space, spelling: " ", line: 9, column: 1}
+token_context:
+   8:    @R0$
+   9:  
+      ^
+
+----------------
+token: 8
+    {kind: space, spelling: " ", line: 8, column: 2}
+token_context:
+   7: $
+   8:   
+       ^
+
+----------------
+token: 3
+    {kind: eol_comment, spelling: " File name: projects/06/max/Max.asm", line: 4, column: 1}
+token_context:
+   3: // by Nisan and Schocken, MIT Press.$
+   4: // File name: projects/06/max/Max.asm$
+      ^
+
+----------------
