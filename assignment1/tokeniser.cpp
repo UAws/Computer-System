@@ -25,8 +25,7 @@ namespace Assignment_Tokeniser
     //   - eol_suffix   ::= '/' comment_char* '\n'
     static void parse_eol_suffix()
     {
-        if (next_char_isa('/'))
-            next_char_mustbe('/');
+        next_char_mustbe('/');
         while (next_char_isa(cg_comment_char))
             parse_comment_char();
         next_char_mustbe('\n');
@@ -38,8 +37,7 @@ namespace Assignment_Tokeniser
     //   - armenian     ::= all unicode code-points from 0x0530 to 0x058F and 0xFB13 to 0xFB17
     static void parse_eol_comment()
     {
-        if (next_char_isa('/'))
-            next_char_mustbe('/');
+        next_char_mustbe('/');
 
         if (next_char_isa('/'))
             parse_eol_suffix();
@@ -73,8 +71,7 @@ namespace Assignment_Tokeniser
     // assign_eq ::= '=' | '=='
     static void parse_assign_eq()
     {
-        if (next_char_isa('='))
-            read_next_char();
+        next_char_mustbe('=');
         if (next_char_isa('='))
             next_char_mustbe('=');
     }
@@ -82,15 +79,14 @@ namespace Assignment_Tokeniser
     // tk_mult,    // '*='
     static void parse_tk_mult()
     {
-        if (next_char_isa('*'))
-            next_char_mustbe('*');
+        next_char_mustbe('*');
         next_char_mustbe('=');
     }
+
     // tk_ne,      // '~='
     static void parse_tk_ne()
     {
-        if (next_char_isa('~'))
-            next_char_mustbe('~');
+        next_char_mustbe('~');
         if (next_char_isa('='))
             next_char_mustbe('=');
     }
@@ -99,10 +95,8 @@ namespace Assignment_Tokeniser
     // tk_la_shift,        // '<<'
     static void parse_tk_ll_shift()
     {
-        if (next_char_isa('<'))
-            next_char_mustbe('<');
-        if (next_char_isa('<'))
-            next_char_mustbe('<');
+        next_char_mustbe('<');
+        next_char_mustbe('<');
         if (next_char_isa('<'))
             next_char_mustbe('<');
     }
@@ -111,10 +105,8 @@ namespace Assignment_Tokeniser
     // tk_ra_shift,        // '>>'
     static void parse_tk_rl_shift()
     {
-        if (next_char_isa('>'))
-            next_char_mustbe('>');
-        if (next_char_isa('>'))
-            next_char_mustbe('>');
+        next_char_mustbe('>');
+        next_char_mustbe('>');
         if (next_char_isa('>'))
             next_char_mustbe('>');
     }

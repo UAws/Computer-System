@@ -41,6 +41,15 @@ namespace Assignment_Tokeniser
             // complete a switch statement for each of the following
         case cg_identifier:
         // characters that start rule identifier
+            switch (ch)
+            {
+            case 'a' ... 'z':
+            case 'A' ... 'Z':
+            case '$':
+                return true;
+            default:
+                return false;
+            }
         case cg_letter:
             // characters that start rule letter
             switch (ch)
@@ -424,15 +433,16 @@ namespace Assignment_Tokeniser
             if (input[i] != '.' && input[i] != '0')
                 checker = true;
 
-            if (input[i] != '.' && checker)
+            if (checker)
                 temp.push_back(input[i]);
         }
 
+        temp.insert(1, ".");
         return make_pair(temp, count);
     }
 
     // the checker
-    int postive_negative_zero_checker(string left)
+    int positive_negative_zero_checker(string left)
     {
         if (stod(left) == 0)
             return 0;
@@ -500,7 +510,7 @@ namespace Assignment_Tokeniser
         // 1. check is there 'e' or 'E' exist
         // 2. if exist, split the spelling to left and right (left is digits before E, right is power after E)
         // 3. if not exist split the spelling to left and right (left is spelling, right is empty)
-        // --- the checker is implemented by postive_negative_zero_checker()
+        // --- the checker is implemented by positive_negative_zero_checker()
         // 4. check the left is equal to 0, return 0
         // 5. check the left is greater than 0, call tk_scientific_left_shift()
         // 5. check the left is less than 0, call tk_scientific_right_shift()
@@ -533,14 +543,14 @@ namespace Assignment_Tokeniser
             }
 
             // compute left part
-            if (postive_negative_zero_checker(left) == 0)
+            if (positive_negative_zero_checker(left) == 0)
                 return "0";
 
-            else if (postive_negative_zero_checker(left) == -1)
+            else if (positive_negative_zero_checker(left) == -1)
             {
                 resultLeft = tk_scientific_right_shift(left);
             }
-            else if (postive_negative_zero_checker(left) == 1)
+            else if (positive_negative_zero_checker(left) == 1)
             {
                 resultLeft = tk_scientific_left_shift(left);
             }
