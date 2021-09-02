@@ -1,0 +1,7 @@
+ID,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description,Kind
+q06,question06,CPUEmulator.sh,question06.tst,yes,,,q6,q6,cpu
+q07,question07,CPUEmulator.sh,question07.tst,yes,,,q7,q7,cpu
+q08,question08,CPUEmulator.sh,question08.tst,yes,,,q8,q8,cpu
+q09,question09,CPUEmulator.sh,question09.tst,yes,,,q9,q9,cpu
+q10,question10,CPUEmulator.sh,question10.tst,yes,,,q10,q10,cpu
+q11,question11,CPUEmulator.sh,question11.tst,yes,,,q11,q11,cpu
