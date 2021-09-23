@@ -1,0 +1,24 @@
+SIM: Starting Testing of VM Class
+SIM: Initialising the Hack Computer
+SIM: Simulation of VM command function Question.zero 0
+HVM: ------------------------
+HVM: function Question.zero 0
+HVM: ------------------------
+HVM:                  address
+HVM:                   before
+HVM:                    after
+HVM: ------------------------
+CPU: ----------------------------
+CPU: PC |    Assembly Language   
+CPU: ----------------------------
+CPU:  0 | executed 0 instructions
+CPU: ----------------------------
+SIM: Simulation of VM command was successul!
+|----------------------------------------------------------------------------------|
+[1;7;30m|                  |       |        | Instructions Executed | Implementation Sizes |[0m
+[1;7;30m|    VM Commands   | Tests | Passed |  Min |  Max |  Total  |  Min |  Max |  Total |[0m
+|----------------------------------------------------------------------------------|
+| function f 0     |     1 |      1 |    0 |    0 |       0 |    0 |    0 |      0 |
+|----------------------------------------------------------------------------------|
+[1;7;32m|      Totals      |     1 |      1 |                     0 |                    0 |[0m
+|----------------------------------------------------------------------------------|

@@ -1,0 +1,7 @@
+pop this 1
+@SP     // Get the value of SP (which points to the first free memory location on the stack)
+AM=M-1   // Decrement this and retrieve the value here (so you can pop it), also update SP
+D=M
+@THIS
+A=M+1   // Load the address in This and add the offset (1 in this case)
+M=D     // Load the value you're popping to the offset address

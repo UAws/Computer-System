@@ -1,0 +1,8 @@
+ID,Path,Program,Arguments,Output,Error,Status,Kind,Short-Description,Long-Description
+0,question00,bin/testit,question00.vm-asm,yes,,,vm-asm,question00,question00
+1,question01,bin/testit,question01.vm-asm,yes,,,vm-asm,question01,question01
+2,question02,bin/testit,question02.vm-asm,yes,,,vm-asm,question02,question02
+3,question03,bin/testit,question03.vm-asm,yes,,,vm-asm,question03,question03
+4,question04,bin/testit,question04.vm-asm,yes,,,vm-asm,question04,question04
+5,question05,bin/testit,question05.vm-asm,yes,,,vm-asm,question05,question05
+6,question06,bin/testit,question06.vm-asm,yes,,,vm-asm,question06,question06

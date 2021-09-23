@@ -1,0 +1,8 @@
+push constant 5
+@5
+D=A
+@SP    // *SP = 5
+A=M
+M=D
+@SP     // sp ++
+M=M+1

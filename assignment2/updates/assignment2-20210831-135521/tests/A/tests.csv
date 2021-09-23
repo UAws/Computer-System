@@ -1,0 +1,7 @@
+ID,Kind,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description
+a1,filter,A0,emulator,,1,1,0,@0,@0
+a2,filter,A69,emulator,,1,1,0,@69,@69
+a3,filter,A32767,emulator,,1,1,0,@32767,@32767
+b1,filter,B0,emulator,D,1,1,0,@0,@0
+b2,filter,B69,emulator,D,1,1,0,@69,@69
+b3,filter,B32767,emulator,D,1,1,0,@32767,@32767

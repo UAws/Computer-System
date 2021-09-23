@@ -1,0 +1,5 @@
+push constant 0
+
+@SP
+M=0
+@SP

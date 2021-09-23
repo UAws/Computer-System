@@ -1,0 +1,31 @@
+ID,Kind,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description
+c01,filter,C01,emulator,,1,1,1,D&A,D&A
+c02,filter,C02,emulator,,1,1,1,M-1,M-1
+c03,filter,C03,emulator,,1,1,1,A=0,A=0
+c04,filter,C04,emulator,,1,1,1,M=-A;JGT,M=-A;JGT
+c05,filter,C05,emulator,,1,1,1,M=A+1;JGT,M=A+1;JGT
+c06,filter,C06,emulator,,1,1,1,M=-1;JGE M=1;JNE D=D&M;JLT,M=-1;JGE M=1;JNE D=D&M;JLT
+c07,filter,C07,emulator,,1,1,1,M=D+M;JMP M=M-D;JLE D=M-D;JEQ,M=D+M;JMP M=M-D;JLE D=M-D;JEQ
+c08,filter,C08,emulator,,1,1,1,AM=M-D;JGE A=D-M;JMP D=D|M;JLT,AM=M-D;JGE A=D-M;JMP D=D|M;JLT
+c09,filter,C09,emulator,,1,1,1,DM=M;JLE AMD=!M;JMP AM=M-1;JEQ,DM=M;JLE AMD=!M;JMP AM=M-1;JEQ
+c10,filter,C10,emulator,,1,1,1,M=D|A D=D+1 AM=A,M=D|A D=D+1 AM=A
+c11,filter,C11,emulator,,1,1,1,AD=!A AMD=A-1 D+A;JGT,AD=!A AMD=A-1 D+A;JGT
+c12,filter,C12,emulator,,1,1,1,A-D;JGE D;JEQ !D;JLT,A-D;JGE D;JEQ !D;JLT
+c13,filter,C13,emulator,,1,1,1,D-1;JNE D;JLE D-A;JMP,D-1;JNE D;JLE D-A;JMP
+c14,filter,C14,emulator,,1,1,1,M=.D.;JNE,M=.D.;JNE
+c15,filter,C15,emulator,,1,1,1,AMD=.1.;JMP,AMD=.1.;JMP
+d01,filter,D01,emulator,D,1,1,1,D&A,D&A
+d02,filter,D02,emulator,D,1,1,1,M-1,M-1
+d03,filter,D03,emulator,D,1,1,1,A=0,A=0
+d04,filter,D04,emulator,D,1,1,1,M=-A;JGT,M=-A;JGT
+d05,filter,D05,emulator,D,1,1,1,M=A+1;JGT,M=A+1;JGT
+d06,filter,D06,emulator,D,1,1,1,M=-1;JGE M=1;JNE D=D&M;JLT,M=-1;JGE M=1;JNE D=D&M;JLT
+d07,filter,D07,emulator,D,1,1,1,M=D+M;JMP M=M-D;JLE D=M-D;JEQ,M=D+M;JMP M=M-D;JLE D=M-D;JEQ
+d08,filter,D08,emulator,D,1,1,1,AM=M-D;JGE A=D-M;JMP D=D|M;JLT,AM=M-D;JGE A=D-M;JMP D=D|M;JLT
+d09,filter,D09,emulator,D,1,1,1,DM=M;JLE AMD=!M;JMP AM=M-1;JEQ,DM=M;JLE AMD=!M;JMP AM=M-1;JEQ
+d10,filter,D10,emulator,D,1,1,1,M=D|A D=D+1 AM=A,M=D|A D=D+1 AM=A
+d11,filter,D11,emulator,D,1,1,1,AD=!A AMD=A-1 D+A;JGT,AD=!A AMD=A-1 D+A;JGT
+d12,filter,D12,emulator,D,1,1,1,A-D;JGE D;JEQ !D;JLT,A-D;JGE D;JEQ !D;JLT
+d13,filter,D13,emulator,D,1,1,1,D-1;JNE D;JLE D-A;JMP,D-1;JNE D;JLE D-A;JMP
+d14,filter,D14,emulator,D,1,1,1,M=.D.;JNE,M=.D.;JNE
+d15,filter,D15,emulator,D,1,1,1,AMD=.1.;JMP,AMD=.1.;JMP

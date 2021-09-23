@@ -81,7 +81,7 @@ namespace Assignment_Tokeniser
             switch (ch)
             {
             case '0' ... '9':
-            case '.':
+            // case '.':
                 // case '+':
                 // case '-':
                 return true;
@@ -113,11 +113,8 @@ namespace Assignment_Tokeniser
             // characters that start rule exponent
             switch (ch)
             {
-            case '0' ... '9':
             case 'e':
             case 'E':
-            case '+':
-            case '-':
                 return true;
             default:
                 return false;
@@ -284,7 +281,7 @@ namespace Assignment_Tokeniser
             if (spelling.find("**") != string::npos)
                 return tk_div;
 
-            if (spelling[1] == '/')
+            if (spelling[1] == '/' && spelling[spelling.length() - 1] == '\n')
                 return tk_eol_comment;
 
         case '*':
@@ -337,7 +334,7 @@ namespace Assignment_Tokeniser
                 return tk_rsb;
 
         case '#':
-
+            if (spelling[spelling.length() - 1] == '\n')
             return tk_hash_comment;
 
         case '"':
@@ -358,8 +355,7 @@ namespace Assignment_Tokeniser
 
         case '0' ... '9':
 
-            if (
-                spelling.find('.') != string::npos || spelling.find('e') != string::npos || spelling.find('E') != string::npos)
+            if (spelling.find('.') != string::npos)
                 return tk_scientific;
 
             return tk_integer;

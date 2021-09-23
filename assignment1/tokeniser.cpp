@@ -175,8 +175,7 @@ namespace Assignment_Tokeniser
     // * scientific ::= integer fraction exponent?
     static void parse_scientific()
     {
-        if (next_char_isa(cg_integer))
-            parse_integer();
+        parse_integer();
         if (next_char_isa('.'))
             parse_fraction();
     }
@@ -184,8 +183,7 @@ namespace Assignment_Tokeniser
     // * hash_comment   ::= '#' comment_char* '\n'
     static void parse_hash_comment()
     {
-        if (next_char_isa('#'))
-            next_char_mustbe('#');
+        next_char_mustbe('#');
         while (next_char_isa(cg_comment_char))
             parse_comment_char();
         next_char_mustbe('\n');
@@ -197,12 +195,8 @@ namespace Assignment_Tokeniser
     static void parse_string()
     {
         next_char_mustbe('"');
-        if (next_char_isa(' '))
-            read_next_char();
         while (next_char_isa(cg_instring))
             next_char_mustbe(cg_instring);
-        if (next_char_isa(' '))
-            read_next_char();
         next_char_mustbe('"');
     }
 
@@ -213,18 +207,16 @@ namespace Assignment_Tokeniser
             read_next_char();
         else if (next_char_isa('/'))
             parse_eol_comment();
-        else if (next_char_isa(cg_scientific))
-            parse_scientific();
-        else if (next_char_isa(cg_integer))
-            parse_integer();
-        else if (next_char_isa(cg_symbol))
-            parse_symbol();
-        else if (next_char_isa(cg_identifier))
-            parse_identifier();
         else if (next_char_isa('#'))
             parse_hash_comment();
         else if (next_char_isa('"'))
             parse_string();
+        else if (next_char_isa(cg_scientific))
+            parse_scientific();
+        else if (next_char_isa(cg_symbol))
+            parse_symbol();
+        else if (next_char_isa(cg_identifier))
+            parse_identifier();
         else if (next_char_isa(EOF))
             ;
         else

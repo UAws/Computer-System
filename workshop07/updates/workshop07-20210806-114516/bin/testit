@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# check we are in the right place
+if [ ! -x bin/assembler ] ; then echo "Cannot find bin/assembler" ; exit -1 ; fi
+if [ ! -x bin/simulator ] ; then echo "Cannot find bin/assembler" ; exit -1 ; fi
+if [ ! -d tests ] ; then echo "Cannot find tests directory" ; exit -1 ; fi
+
+# if no args given - read from stdin
+if [ ${#@} -eq 0 ]
+then
+    testit=test-it
+
+    output=`mktemp output-sim-asm.XXXXXX`
+    errors=`mktemp errors-sim-asm.XXXXXX`
+
+    # construct output, errors pathames and run the assembler
+    bin/assembler > "${output}" 2> "${errors}"
+else
+    # check input file - arg 1
+    input="${1}"
+    if [ ! -f "${input}" ] ; then echo "Cannot open input file ${input}" ; exit -1 ; fi
+
+    # if we have a second arg, is it fake-it?
+    testit=test-it
+    if [ ${#@} -gt 1 -a "x${2}" == "xfake-it" ]
+    then
+        # kill off trace writes and log messages
+        export CSTOOLS_IOBUFFER_TRACES=iob_disable
+        export CSTOOLS_IOBUFFER_LOGS=iob_disable
+
+        testit=fake-it
+    fi
+
+    # construct output, errors pathames and run the assembler
+    output="${input%.vm-asm}.sim-asm"
+    errors="${input%.vm-asm}.sim-asm-errors"
+    cat "${input}" | bin/assembler > "${output}" 2> "${errors}"
+
+fi
+
+# if we had errors, report them, otherwise run the simulator
+if [ -s "${errors}" ]
+then
+    cat "${output}" "${errors}"
+else
+    cat "${output}" | bin/simulator "${testit}"
+fi
+
+# clean up
+rm -f "${output}" "${errors}"
+
