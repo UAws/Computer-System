@@ -1,0 +1,8 @@
+class Main
+{
+// public:
+  function void main()
+  {
+    return ;
+  }
+}

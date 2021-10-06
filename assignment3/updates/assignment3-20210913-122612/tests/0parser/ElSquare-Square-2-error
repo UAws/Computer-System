@@ -1,0 +1,6 @@
+
+ 26: 
+ 27:         do draw()
+                    ^
+Did not find token "'.' or '::'" but found "("
+

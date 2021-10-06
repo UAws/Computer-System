@@ -1,0 +1,6 @@
+
+ 39:         
+ 40:         do show()
+                    ^
+Did not find token "'.' or '::'" but found "("
+

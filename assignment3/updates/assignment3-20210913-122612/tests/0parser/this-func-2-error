@@ -1,0 +1,6 @@
+
+ 4:     {
+ 5:         do call_this_method()
+                               ^
+Did not find token "'.' or '::'" but found "("
+

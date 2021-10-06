@@ -1,0 +1,27 @@
+/** The List class provides a linked list abstraction */
+/* This linked list represents an empty list with the value null */
+class List
+{
+    field int head ;
+    field List tail ;
+
+    /* Creates a new list object */
+    constructor List cons(int _head,List _tail)
+    {
+        let head = _head ;
+        let tail = _tail ;
+        return this ;
+    }
+
+    /* get the head of a List object */
+    method int getHead()
+    {
+        return head ;
+    }
+
+    /* get the tail of a List object */
+    method List getTail()
+    {
+        return tail ;
+    }
+}

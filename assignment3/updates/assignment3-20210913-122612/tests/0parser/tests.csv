@@ -1,0 +1,52 @@
+ID,Kind,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description
+a01,filter,01-Class,parser,,yes,yes,0,01/Class.jack,01/Class.jack
+a02,filter,02-Class,parser,,yes,yes,0,02/Class.jack,02/Class.jack
+a03,filter,03-Class,parser,,yes,yes,0,03/Class.jack,03/Class.jack
+a04,filter,04-Class,parser,,yes,yes,0,04/Class.jack,04/Class.jack
+a05,filter,05-Class,parser,,yes,yes,0,05/Class.jack,05/Class.jack
+a06,filter,06-Class,parser,,yes,yes,0,06/Class.jack,06/Class.jack
+p01,filter,01-Main,parser,,yes,yes,0,01/Main.jack,01/Main.jack
+p02,filter,02-Main,parser,,yes,yes,0,02/Main.jack,02/Main.jack
+p03,filter,03-Main,parser,,yes,yes,0,03/Main.jack,03/Main.jack
+p04,filter,04-Main,parser,,yes,yes,0,04/Main.jack,04/Main.jack
+p05,filter,05-Main,parser,,yes,yes,0,05/Main.jack,05/Main.jack
+p06,filter,06-Main,parser,,yes,yes,0,06/Main.jack,06/Main.jack
+p07,filter,07-Main,parser,,yes,yes,0,07/Main.jack,07/Main.jack
+p08,filter,08-Main,parser,,yes,yes,0,08/Main.jack,08/Main.jack
+p09,filter,09-Main,parser,,yes,yes,0,09/Main.jack,09/Main.jack
+p10,filter,10-Main,parser,,yes,yes,0,10/Main.jack,10/Main.jack
+p11,filter,11-Main,parser,,yes,yes,0,11/Main.jack,11/Main.jack
+p12,filter,12-Main,parser,,yes,yes,0,12/Main.jack,12/Main.jack
+p13,filter,13-Main,parser,,yes,yes,0,13/Main.jack,13/Main.jack
+p14,filter,14-Main,parser,,yes,yes,0,14/Main.jack,14/Main.jack
+p15,filter,15-Main,parser,,yes,yes,0,15/Main.jack,15/Main.jack
+p16,filter,16-Main,parser,,yes,yes,0,16/Main.jack,16/Main.jack
+p17,filter,17-Main,parser,,yes,yes,0,17/Main.jack,17/Main.jack
+p18,filter,18-Main,parser,,yes,yes,0,18/Main.jack,18/Main.jack
+p19,filter,19-Main,parser,,yes,yes,0,19/Main.jack,19/Main.jack
+p20,filter,20-Main,parser,,yes,yes,0,20/Main.jack,20/Main.jack
+p21,filter,ArrayTst-Main,parser,,yes,yes,0,ArrayTst/Main.jack,ArrayTst/Main.jack
+p22,filter,Average-Main,parser,,yes,yes,0,Average/Main.jack,Average/Main.jack
+p23,filter,ComplexA-Main,parser,,yes,yes,0,ComplexA/Main.jack,ComplexA/Main.jack
+p24,filter,ConvertB-Main,parser,,yes,yes,0,ConvertB/Main.jack,ConvertB/Main.jack
+p25,filter,ElSquare-Main,parser,,yes,yes,0,ElSquare/Main.jack,ElSquare/Main.jack
+p26,filter,ElSquare-Square,parser,,yes,yes,0,ElSquare/Square.jack,ElSquare/Square.jack
+p27,filter,ElSquare-SquareGame,parser,,yes,yes,0,ElSquare/SquareGame.jack,ElSquare/SquareGame.jack
+p28,filter,Minint-Main,parser,,yes,yes,0,Minint/Main.jack,Minint/Main.jack
+p29,filter,Pong-Ball,parser,,yes,yes,0,Pong/Ball.jack,Pong/Ball.jack
+p30,filter,Pong-Bat,parser,,yes,yes,0,Pong/Bat.jack,Pong/Bat.jack
+p31,filter,Pong-Main,parser,,yes,yes,0,Pong/Main.jack,Pong/Main.jack
+p32,filter,Pong-PongGame,parser,,yes,yes,0,Pong/PongGame.jack,Pong/PongGame.jack
+p33,filter,Seven-Main,parser,,yes,yes,0,Seven/Main.jack,Seven/Main.jack
+p34,filter,Square-Main,parser,,yes,yes,0,Square/Main.jack,Square/Main.jack
+p35,filter,Square-Square,parser,,yes,yes,0,Square/Square.jack,Square/Square.jack
+p36,filter,Square-SquareGame,parser,,yes,yes,0,Square/SquareGame.jack,Square/SquareGame.jack
+p37,filter,badcons,parser,,yes,yes,0,Constructor has wrong return type,Constructor has wrong return type
+p38,filter,dup,parser,,yes,yes,0,Duplicate variable declaration,Duplicate variable declaration
+p39,filter,noreturn,parser,,yes,yes,0,No return statement in a function,No return statement in a function
+p40,filter,notbob,parser,,yes,yes,0,No value returned from non-void function,No value returned from non-void function
+p41,filter,notthis,parser,,yes,yes,0,Constructor not returning this,Constructor not returning this
+p42,filter,notvoid,parser,,yes,yes,0,Value returned from void function,Value returned from void function
+p43,filter,undec,parser,,yes,yes,0,Using an undeclared variable,Using an undeclared variable
+p44,filter,this-func,parser,,yes,yes,0,Method call on this inside a function,Method call on this inside a function
+

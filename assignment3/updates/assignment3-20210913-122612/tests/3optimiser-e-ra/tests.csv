@@ -1,0 +1,10 @@
+ID,Kind,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description
+e17,filter,17-Main,optimiser-e,,yes,yes,0,17/Main.jack,17/Main.jack
+e18,filter,18-Main,optimiser-e,,yes,yes,0,18/Main.jack,18/Main.jack
+e19,filter,19-Main,optimiser-e,,yes,yes,0,19/Main.jack,19/Main.jack
+e20,filter,20-Main,optimiser-e,,yes,yes,0,20/Main.jack,20/Main.jack
+e24,filter,ConvertB-Main,optimiser-e,,yes,yes,0,ConvertB/Main.jack,ConvertB/Main.jack
+e28,filter,Minint-Main,optimiser-e,,yes,yes,0,Minint/Main.jack,Minint/Main.jack
+e29,filter,Pong-Ball,optimiser-e,,yes,yes,0,Pong/Ball.jack,Pong/Ball.jack
+e32,filter,Pong-PongGame,optimiser-e,,yes,yes,0,Pong/PongGame.jack,Pong/PongGame.jack
+e33,filter,Seven-Main,optimiser-e,,yes,yes,0,Seven/Main.jack,Seven/Main.jack

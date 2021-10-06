@@ -1,0 +1,40 @@
+function Main.main 5
+push constant 7
+push constant 12
+sub
+pop local 0
+push constant 7
+push constant 4
+add
+pop local 1
+push local 1
+push local 3
+call Math.multiply 2
+push local 4
+sub
+push constant 0
+and
+pop local 2
+push local 0
+push local 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call Other.called 0
+push constant 0
+call Math.multiply 2
+push constant 4
+add
+push constant 1
+push constant 45
+call Math.multiply 2
+sub
+pop local 3
+push local 1
+push local 1
+and
+pop local 4
+label IF_FALSE0
+push constant 0
+return

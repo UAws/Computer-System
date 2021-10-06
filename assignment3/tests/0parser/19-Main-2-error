@@ -1,0 +1,6 @@
+***** Error:
+ 8:         let b = d > d ;
+ 9:         let c = (b * X.x
+                          ^
+X must be a declared variable
+

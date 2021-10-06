@@ -1,0 +1,6 @@
+***** Error:
+ 24:     constructor SquareGame new() {
+ 25:         let square = Square.n
+                                ^
+Square must be a declared variable
+

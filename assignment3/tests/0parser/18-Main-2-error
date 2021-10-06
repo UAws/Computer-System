@@ -1,0 +1,6 @@
+***** Error:
+ 11:         {
+ 12:             let d = Other.c
+                              ^
+Other must be a declared variable
+

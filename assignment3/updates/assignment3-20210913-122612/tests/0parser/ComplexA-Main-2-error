@@ -1,0 +1,6 @@
+***** Error:
+ 15:         
+ 16:         let a = Array.n
+                          ^
+Array must be a declared variable
+

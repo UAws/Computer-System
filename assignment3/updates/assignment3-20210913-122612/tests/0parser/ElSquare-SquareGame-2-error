@@ -1,0 +1,6 @@
+***** Error:
+ 35:         do square.dispose();
+ 36:         do Memory.d
+                      ^
+Memory must be a declared variable
+

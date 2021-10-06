@@ -1,0 +1,112 @@
+function Main.main 9
+push constant 0
+pop local 8
+push constant 0
+pop local 6
+push constant 0
+call String.new 1
+call Unix.readInt 1
+pop local 7
+label WHILE_EXP0
+push local 7
+push constant 0
+eq
+not
+not
+if-goto WHILE_END0
+push local 7
+push local 0
+call List.cons 2
+pop local 0
+push local 8
+push local 7
+add
+pop local 8
+push constant 0
+call String.new 1
+call Unix.readInt 1
+pop local 7
+push local 6
+push constant 1
+add
+pop local 6
+goto WHILE_EXP0
+label WHILE_END0
+push local 8
+call DP.new 1
+pop local 2
+push local 6
+call DP.new 1
+pop local 3
+push constant 0
+call DP.new 1
+pop local 4
+push local 4
+push local 2
+push local 3
+call DP.divide 3
+pop temp 0
+push local 2
+call DP.dispose 1
+pop temp 0
+push constant 0
+call DP.new 1
+pop local 5
+push constant 0
+pop local 7
+push local 0
+pop local 1
+label WHILE_EXP1
+push local 1
+push constant 0
+eq
+not
+not
+if-goto WHILE_END1
+push local 1
+call List.getHead 1
+pop local 7
+push local 7
+call DP.new 1
+pop local 2
+push local 3
+push local 2
+push local 4
+call DP.subtract 3
+pop temp 0
+push local 3
+push local 3
+push constant 2
+call DP.new 1
+call DP.power 3
+pop temp 0
+push local 5
+push local 5
+push local 3
+call DP.add 3
+pop temp 0
+push local 1
+call List.getTail 1
+pop local 1
+goto WHILE_EXP1
+label WHILE_END1
+push local 3
+push local 5
+push local 6
+push constant 1
+sub
+call DP.new 1
+call DP.divide 3
+pop temp 0
+push local 3
+push local 3
+call DP.sqrt 2
+pop temp 0
+push local 3
+call DP.toString 1
+call Unix.printString 1
+pop temp 0
+call Unix.println 0
+pop temp 0
+push constant 0
+return

@@ -1,0 +1,6 @@
+
+ 4:     field char f ;
+ 5:     static 
+        ^
+Found token "static" but expected "}"
+

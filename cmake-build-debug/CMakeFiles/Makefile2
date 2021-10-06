@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
+RM = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -63,16 +63,56 @@ CMAKE_BINARY_DIR = /Users/akide/CLionProjects/cs-projects/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: assignment3/all
+all: assignment2/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: assignment3/preinstall
+preinstall: assignment2/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/cs_projects.dir/clean
+clean: assignment3/clean
+clean: assignment2/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory assignment2
+
+# Recursive "all" directory target.
+assignment2/all: assignment2/CMakeFiles/emulator.dir/all
+.PHONY : assignment2/all
+
+# Recursive "preinstall" directory target.
+assignment2/preinstall:
+.PHONY : assignment2/preinstall
+
+# Recursive "clean" directory target.
+assignment2/clean: assignment2/CMakeFiles/emulator.dir/clean
+.PHONY : assignment2/clean
+
+#=============================================================================
+# Directory level rules for directory assignment3
+
+# Recursive "all" directory target.
+assignment3/all: assignment3/CMakeFiles/optimiser-r.dir/all
+assignment3/all: assignment3/CMakeFiles/pretty.dir/all
+assignment3/all: assignment3/CMakeFiles/codegen.dir/all
+assignment3/all: assignment3/CMakeFiles/parser.dir/all
+.PHONY : assignment3/all
+
+# Recursive "preinstall" directory target.
+assignment3/preinstall:
+.PHONY : assignment3/preinstall
+
+# Recursive "clean" directory target.
+assignment3/clean: assignment3/CMakeFiles/optimiser-r.dir/clean
+assignment3/clean: assignment3/CMakeFiles/pretty.dir/clean
+assignment3/clean: assignment3/CMakeFiles/codegen.dir/clean
+assignment3/clean: assignment3/CMakeFiles/parser.dir/clean
+.PHONY : assignment3/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/cs_projects.dir
@@ -99,6 +139,136 @@ cs_projects: CMakeFiles/cs_projects.dir/rule
 CMakeFiles/cs_projects.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs_projects.dir/build.make CMakeFiles/cs_projects.dir/clean
 .PHONY : CMakeFiles/cs_projects.dir/clean
+
+#=============================================================================
+# Target rules for target assignment3/CMakeFiles/optimiser-r.dir
+
+# All Build rule for target.
+assignment3/CMakeFiles/optimiser-r.dir/all:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/optimiser-r.dir/build.make assignment3/CMakeFiles/optimiser-r.dir/depend
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/optimiser-r.dir/build.make assignment3/CMakeFiles/optimiser-r.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target optimiser-r"
+.PHONY : assignment3/CMakeFiles/optimiser-r.dir/all
+
+# Build rule for subdir invocation for target.
+assignment3/CMakeFiles/optimiser-r.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/optimiser-r.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 0
+.PHONY : assignment3/CMakeFiles/optimiser-r.dir/rule
+
+# Convenience name for target.
+optimiser-r: assignment3/CMakeFiles/optimiser-r.dir/rule
+.PHONY : optimiser-r
+
+# clean rule for target.
+assignment3/CMakeFiles/optimiser-r.dir/clean:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/optimiser-r.dir/build.make assignment3/CMakeFiles/optimiser-r.dir/clean
+.PHONY : assignment3/CMakeFiles/optimiser-r.dir/clean
+
+#=============================================================================
+# Target rules for target assignment3/CMakeFiles/pretty.dir
+
+# All Build rule for target.
+assignment3/CMakeFiles/pretty.dir/all:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/pretty.dir/build.make assignment3/CMakeFiles/pretty.dir/depend
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/pretty.dir/build.make assignment3/CMakeFiles/pretty.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target pretty"
+.PHONY : assignment3/CMakeFiles/pretty.dir/all
+
+# Build rule for subdir invocation for target.
+assignment3/CMakeFiles/pretty.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/pretty.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 0
+.PHONY : assignment3/CMakeFiles/pretty.dir/rule
+
+# Convenience name for target.
+pretty: assignment3/CMakeFiles/pretty.dir/rule
+.PHONY : pretty
+
+# clean rule for target.
+assignment3/CMakeFiles/pretty.dir/clean:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/pretty.dir/build.make assignment3/CMakeFiles/pretty.dir/clean
+.PHONY : assignment3/CMakeFiles/pretty.dir/clean
+
+#=============================================================================
+# Target rules for target assignment3/CMakeFiles/codegen.dir
+
+# All Build rule for target.
+assignment3/CMakeFiles/codegen.dir/all:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/codegen.dir/build.make assignment3/CMakeFiles/codegen.dir/depend
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/codegen.dir/build.make assignment3/CMakeFiles/codegen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target codegen"
+.PHONY : assignment3/CMakeFiles/codegen.dir/all
+
+# Build rule for subdir invocation for target.
+assignment3/CMakeFiles/codegen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/codegen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 0
+.PHONY : assignment3/CMakeFiles/codegen.dir/rule
+
+# Convenience name for target.
+codegen: assignment3/CMakeFiles/codegen.dir/rule
+.PHONY : codegen
+
+# clean rule for target.
+assignment3/CMakeFiles/codegen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/codegen.dir/build.make assignment3/CMakeFiles/codegen.dir/clean
+.PHONY : assignment3/CMakeFiles/codegen.dir/clean
+
+#=============================================================================
+# Target rules for target assignment3/CMakeFiles/parser.dir
+
+# All Build rule for target.
+assignment3/CMakeFiles/parser.dir/all:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/parser.dir/build.make assignment3/CMakeFiles/parser.dir/depend
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/parser.dir/build.make assignment3/CMakeFiles/parser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target parser"
+.PHONY : assignment3/CMakeFiles/parser.dir/all
+
+# Build rule for subdir invocation for target.
+assignment3/CMakeFiles/parser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assignment3/CMakeFiles/parser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 0
+.PHONY : assignment3/CMakeFiles/parser.dir/rule
+
+# Convenience name for target.
+parser: assignment3/CMakeFiles/parser.dir/rule
+.PHONY : parser
+
+# clean rule for target.
+assignment3/CMakeFiles/parser.dir/clean:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/parser.dir/build.make assignment3/CMakeFiles/parser.dir/clean
+.PHONY : assignment3/CMakeFiles/parser.dir/clean
+
+#=============================================================================
+# Target rules for target assignment2/CMakeFiles/emulator.dir
+
+# All Build rule for target.
+assignment2/CMakeFiles/emulator.dir/all:
+	$(MAKE) $(MAKESILENT) -f assignment2/CMakeFiles/emulator.dir/build.make assignment2/CMakeFiles/emulator.dir/depend
+	$(MAKE) $(MAKESILENT) -f assignment2/CMakeFiles/emulator.dir/build.make assignment2/CMakeFiles/emulator.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target emulator"
+.PHONY : assignment2/CMakeFiles/emulator.dir/all
+
+# Build rule for subdir invocation for target.
+assignment2/CMakeFiles/emulator.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assignment2/CMakeFiles/emulator.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/akide/CLionProjects/cs-projects/cmake-build-debug/CMakeFiles 0
+.PHONY : assignment2/CMakeFiles/emulator.dir/rule
+
+# Convenience name for target.
+emulator: assignment2/CMakeFiles/emulator.dir/rule
+.PHONY : emulator
+
+# clean rule for target.
+assignment2/CMakeFiles/emulator.dir/clean:
+	$(MAKE) $(MAKESILENT) -f assignment2/CMakeFiles/emulator.dir/build.make assignment2/CMakeFiles/emulator.dir/clean
+.PHONY : assignment2/CMakeFiles/emulator.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

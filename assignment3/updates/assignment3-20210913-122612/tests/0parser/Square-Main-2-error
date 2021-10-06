@@ -1,0 +1,6 @@
+***** Error:
+ 14: 
+ 15:         let game = SquareGame.n
+                                  ^
+SquareGame must be a declared variable
+

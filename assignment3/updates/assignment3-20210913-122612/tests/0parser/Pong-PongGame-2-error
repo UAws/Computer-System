@@ -1,0 +1,6 @@
+***** Error:
+ 36:     constructor PongGame new() {
+ 37:         do Screen.c
+                      ^
+Screen must be a declared variable
+

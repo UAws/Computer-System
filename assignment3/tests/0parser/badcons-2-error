@@ -1,0 +1,6 @@
+***** Error:
+ 2: {
+ 3:         constructor Milly main(
+                              ^
+constructor return type must be its own class
+

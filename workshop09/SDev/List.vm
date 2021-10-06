@@ -1,0 +1,20 @@
+function List.cons 0
+push constant 2
+call Memory.alloc 1
+pop pointer 0
+push argument 0
+pop this 0
+push argument 1
+pop this 1
+push pointer 0
+return
+function List.getHead 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function List.getTail 0
+push argument 0
+pop pointer 0
+push this 1
+return

@@ -1,0 +1,6 @@
+***** Error:
+ 29:         
+ 30:         do Main.f
+                    ^
+Main must be a declared variable
+

@@ -1,0 +1,6 @@
+***** Error:
+ 11:         {
+ 12:                 let bb = Main.r
+                                  ^
+Main must be a declared variable
+

@@ -1,0 +1,6 @@
+***** Error:
+ 19: 
+ 20:                 let mm = Main.n
+                                  ^
+Main must be a declared variable
+

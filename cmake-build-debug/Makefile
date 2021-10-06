@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
+RM = "/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/akide/CLionProjects/cs-projects/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5080.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -129,6 +129,71 @@ cs_projects/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cs_projects.dir/build.make CMakeFiles/cs_projects.dir/build
 .PHONY : cs_projects/fast
 
+#=============================================================================
+# Target rules for targets named optimiser-r
+
+# Build rule for target.
+optimiser-r: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 optimiser-r
+.PHONY : optimiser-r
+
+# fast build rule for target.
+optimiser-r/fast:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/optimiser-r.dir/build.make assignment3/CMakeFiles/optimiser-r.dir/build
+.PHONY : optimiser-r/fast
+
+#=============================================================================
+# Target rules for targets named pretty
+
+# Build rule for target.
+pretty: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pretty
+.PHONY : pretty
+
+# fast build rule for target.
+pretty/fast:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/pretty.dir/build.make assignment3/CMakeFiles/pretty.dir/build
+.PHONY : pretty/fast
+
+#=============================================================================
+# Target rules for targets named codegen
+
+# Build rule for target.
+codegen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
+.PHONY : codegen
+
+# fast build rule for target.
+codegen/fast:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/codegen.dir/build.make assignment3/CMakeFiles/codegen.dir/build
+.PHONY : codegen/fast
+
+#=============================================================================
+# Target rules for targets named parser
+
+# Build rule for target.
+parser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser
+.PHONY : parser
+
+# fast build rule for target.
+parser/fast:
+	$(MAKE) $(MAKESILENT) -f assignment3/CMakeFiles/parser.dir/build.make assignment3/CMakeFiles/parser.dir/build
+.PHONY : parser/fast
+
+#=============================================================================
+# Target rules for targets named emulator
+
+# Build rule for target.
+emulator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 emulator
+.PHONY : emulator
+
+# fast build rule for target.
+emulator/fast:
+	$(MAKE) $(MAKESILENT) -f assignment2/CMakeFiles/emulator.dir/build.make assignment2/CMakeFiles/emulator.dir/build
+.PHONY : emulator/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -138,6 +203,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cs_projects"
+	@echo "... codegen"
+	@echo "... emulator"
+	@echo "... optimiser-r"
+	@echo "... parser"
+	@echo "... pretty"
 .PHONY : help
 
 

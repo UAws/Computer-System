@@ -1,0 +1,7 @@
+class Main
+{
+	constructor Main main()
+	{
+		return 11 ;
+	}
+}

@@ -1,0 +1,29 @@
+class Main
+{
+    function void main(){
+
+        var DP dp_a,dp_b,dp_c;
+        var int i,value,sum;
+        let sum = 0;
+        let i = 0;
+        let value = Unix.readInt("");
+        while ( ~(value = 0) ){
+            let sum = sum + value;
+            let value = Unix.readInt("");
+            let i = i + 1;
+        }
+
+
+        let dp_a = DP.new(sum);
+        let dp_b = DP.new(i);
+        let dp_c = DP.new(0);
+        do DP.divide(dp_c,dp_a,dp_b);
+        do Unix.printString(DP.toString(dp_c));
+        do Unix.println();
+        return;
+
+        
+
+
+    }
+}

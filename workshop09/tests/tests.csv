@@ -1,0 +1,8 @@
+ID,Path,Program,Arguments,Output,Error,Status,Kind,Short-Description,Long-Description
+1,HelloWorld,VMEmulator.sh,HelloWorld/runAll.tst,yes,yes,yes,jack,HelloWorld,HelloWorld
+2,Sum,VMEmulator.sh,Sum/runAll.tst,yes,yes,yes,jack,Sum,Sum
+3,Average0,VMEmulator.sh,Average/runAll.tst,yes,yes,yes,jack,Average,Average
+4,Average1,VMEmulator.sh,Average/runAll.tst,yes,yes,yes,jack,Average,Average
+5,SDev0,VMEmulator.sh,SDev/runAll.tst,yes,yes,yes,jack,SDev,SDev
+6,SDev2,VMEmulator.sh,SDev/runAll.tst,yes,yes,yes,jack,SDev,SDev
+7,SDev2,VMEmulator.sh,SDev/runAll.tst,yes,yes,yes,jack,SDev,SDev

@@ -1,0 +1,6 @@
+***** Error:
+ 12:         
+ 13:         let length = Keyboard.r
+                                  ^
+Keyboard must be a declared variable
+

@@ -1,0 +1,7 @@
+class myclass
+{
+    field char f ;
+    static boolean c,d,e ;
+    field char g,h,i ;
+    static boolean b ;
+}

@@ -1,0 +1,6 @@
+***** Error:
+ 3:         field int a ;
+ 4:         field int a ;
+                        ^
+a has already been declared
+

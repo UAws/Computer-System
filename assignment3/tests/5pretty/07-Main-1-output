@@ -1,0 +1,13 @@
+class Main
+{
+// private:
+  static int aa ;
+  static int bb ;
+
+// public:
+  function void main()
+  {
+    let aa = bb + 7 ;
+    return ;
+  }
+}

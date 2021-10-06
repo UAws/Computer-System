@@ -1,0 +1,6 @@
+
+ 3:     field string z1,z2 ;
+ 4:     static 
+        ^
+Found token "static" but expected "}"
+

@@ -1,0 +1,11 @@
+class Main
+{
+// public:
+  function void main()
+  {
+    var int a ;
+    var int b ;
+
+    return ;
+  }
+}

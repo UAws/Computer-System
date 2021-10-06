@@ -1,0 +1,20 @@
+function Main.main 3
+push constant 0
+call String.new 1
+call Unix.readInt 1
+pop local 0
+push constant 0
+call String.new 1
+call Unix.readInt 1
+pop local 1
+push local 0
+push local 1
+add
+pop local 2
+push local 2
+call Unix.printInt 1
+pop temp 0
+call Unix.println 0
+pop temp 0
+push constant 0
+return

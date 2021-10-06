@@ -1,0 +1,52 @@
+function Main.main 6
+push constant 0
+pop local 5
+push constant 0
+pop local 3
+push constant 0
+call String.new 1
+call Unix.readInt 1
+pop local 4
+label WHILE_EXP0
+push local 4
+push constant 0
+eq
+not
+not
+if-goto WHILE_END0
+push local 5
+push local 4
+add
+pop local 5
+push constant 0
+call String.new 1
+call Unix.readInt 1
+pop local 4
+push local 3
+push constant 1
+add
+pop local 3
+goto WHILE_EXP0
+label WHILE_END0
+push local 5
+call DP.new 1
+pop local 0
+push local 3
+call DP.new 1
+pop local 1
+push constant 0
+call DP.new 1
+pop local 2
+push local 2
+push local 0
+push local 1
+call DP.divide 3
+pop temp 0
+push local 2
+call DP.toString 1
+call Unix.printString 1
+pop temp 0
+call Unix.println 0
+pop temp 0
+push constant 0
+return

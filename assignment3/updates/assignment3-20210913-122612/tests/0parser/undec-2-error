@@ -1,0 +1,6 @@
+***** Error:
+ 4:         {
+ 5:                 let a = 
+                          ^
+a must be a declared variable
+

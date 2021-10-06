@@ -1,0 +1,60 @@
+class Main
+{
+    function void main(){
+         var List list ;            // a variable to point at the start of our list
+         var List next ;           // a variable to use while traversing our list
+
+        var DP dp_a,dp_b,average,dp_sum;
+        var int i,value,sum;
+        let sum = 0;
+        let i = 0;
+
+        // read input and retrieve the sum
+        let value = Unix.readInt("");
+        while ( ~(value = 0) ){
+            // add value to list
+            let list = List.cons(value,list);
+            let sum = sum + value;
+            let value = Unix.readInt("");
+            let i = i + 1;
+        }
+
+
+        // calculate average
+        let dp_a = DP.new(sum);
+        let dp_b = DP.new(i);
+        let average = DP.new(0);
+        do DP.divide(average,dp_a,dp_b);
+        do dp_a.dispose();
+
+        
+        let dp_sum = DP.new(0);
+        let value = 0;
+        let next = list ;
+        while ( ~(next = null) )
+        {
+            // do Unix.printInt(next.getHead()) ;
+            // do Unix.println() ;
+
+            // current x
+            let value = next.getHead();
+
+
+
+            let dp_a = DP.new(value);
+            do DP.subtract(dp_b,dp_a,average);
+            do DP.power(dp_b,dp_b,DP.new(2));
+            do DP.add(dp_sum,dp_sum,dp_b);
+
+            let next = next.getTail() ;
+        }
+
+        do DP.divide(dp_b,dp_sum,DP.new(i-1));
+        do DP.sqrt(dp_b,dp_b);
+
+        do Unix.printString(DP.toString(dp_b));
+        do Unix.println();
+
+        return;
+    }
+}
