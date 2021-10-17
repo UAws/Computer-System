@@ -1,0 +1,15 @@
+var A a ;
+if ( a < a )
+{
+	let a = 3 ;
+	if ( 3 == 3 )
+	{
+	} else
+	{
+		while( a > 2 )
+		{
+			let a = 564 ;
+			if ( a == 562 ) { while ( a < 8 ) {} }
+		}
+	}
+}

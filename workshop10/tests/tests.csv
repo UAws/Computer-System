@@ -1,0 +1,4 @@
+ID,Path,Program,Arguments,Output,Error,Status,Kind,Short-Description,Long-Description
+1,example1,parser,,yes,yes,yes,filter,while loop,Example 1 is a pair of declarations followed by a single while loop statement.
+2,example2,parser,,yes,yes,yes,filter,syntax error,Example 2 contains a syntax error. It has two declarations followed by three statements but the grammar only permits a single statement. Since there is an error this test will check the error output and the exit status.
+3,example3,parser,,yes,yes,yes,filter,nested ifs and whiles,Example 3 has a number of nested ifs and while loops. This is a useful test of a code generator because it needs unique label names allocated to each if and while.

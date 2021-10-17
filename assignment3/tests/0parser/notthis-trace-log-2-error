@@ -1,5 +1,15 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+    2: parse_constructor()
+    3: parse_subr_body()
+    4: parse_statements()
+    5: parse_statement()
+    6: parse_return()
+error: 
+ 4:         {
+ 5:                 return 11 
+                           ^
+Found token "11" but expected "this"
 

@@ -1,2 +1,6 @@
-nullptr passed to jsymbols_pop
+***** Error:
+ 17:         {
+ 18:                 return returnbb(z
+                                    ^
+returnbb must be a declared variable
 

@@ -13,18 +13,6 @@
             </param-list>
             <subr-body>
                <var-decs>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>a</var-name>
-                     <var-offset>0</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>b</var-name>
-                     <var-offset>1</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
                </var-decs>
                <statements>
                   <statement>

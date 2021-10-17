@@ -1,42 +1,6 @@
 <class>
    <class-name>Main</class-name>
    <class-var-decs>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>aa</var-name>
-         <var-offset>0</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s0</var-name>
-         <var-offset>1</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s1</var-name>
-         <var-offset>2</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s2</var-name>
-         <var-offset>3</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s3</var-name>
-         <var-offset>4</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s4</var-name>
-         <var-offset>5</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
    </class-var-decs>
    <class-var-decs>
       <var-dec>

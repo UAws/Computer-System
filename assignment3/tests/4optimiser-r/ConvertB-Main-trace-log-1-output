@@ -15,12 +15,6 @@
                <var-decs>
                   <var-dec>
                      <var-segment>local</var-segment>
-                     <var-name>result</var-name>
-                     <var-offset>0</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
                      <var-name>value</var-name>
                      <var-offset>1</var-offset>
                      <var-type>int</var-type>

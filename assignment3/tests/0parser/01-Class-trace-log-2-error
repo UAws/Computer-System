@@ -1,5 +1,8 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+error: 
+ 1: 
+   ^
+Found token "end of input" but expected "class"
 

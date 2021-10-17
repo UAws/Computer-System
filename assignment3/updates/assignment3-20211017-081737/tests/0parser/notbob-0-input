@@ -1,0 +1,7 @@
+class Main
+{
+	function bob main()
+	{
+		return ;
+	}
+}

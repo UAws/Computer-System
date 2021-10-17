@@ -7,6 +7,10 @@
 /Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment3/CMakeFiles/pretty.dir
 /Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment3/CMakeFiles/codegen.dir
 /Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment3/CMakeFiles/parser.dir
+/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/CMakeFiles/rebuild_cache.dir
+/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/CMakeFiles/edit_cache.dir
+/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/CMakeFiles/workshop11_parser.dir
+/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/CMakeFiles/translator.dir
 /Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment2/CMakeFiles/rebuild_cache.dir
 /Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment2/CMakeFiles/edit_cache.dir
 /Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment2/CMakeFiles/emulator.dir

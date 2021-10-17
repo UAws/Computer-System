@@ -1,0 +1,8 @@
+var number x ;
+var number y ;
+let x = 1 ;
+let y = 173 ;
+while ( x < y )
+{
+	let y = x * 5 ;
+}

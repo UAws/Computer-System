@@ -1,5 +1,26 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+    2: parse_function()
+    3: parse_subr_body()
+    4: parse_statements()
+    5: parse_statement()
+    6: parse_let()
+    7: parse_expr()
+    8: parse_statement()
+    9: parse_if()
+   10: parse_expr()
+   11: parse_term()
+   12: parse_statements()
+   13: parse_statement()
+   14: parse_let()
+   15: parse_expr()
+   16: parse_term()
+   17: parse_var_term()
+error: ***** Error:
+ 11:         {
+ 12:             let d = Other.c
+                              ^
+Other must be a declared variable
 

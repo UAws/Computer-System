@@ -16,49 +16,6 @@
                </var-decs>
                <statements>
                   <statement>
-                     <if>
-                        <expr>
-                           <term>
-                              <bool>
-                                 <tf>true</tf>
-                              </bool>
-                           </term>
-                        </expr>
-                        <statements>
-                        </statements>
-                     </if>
-                  </statement>
-                  <statement>
-                     <if-else>
-                        <expr>
-                           <term>
-                              <bool>
-                                 <tf>false</tf>
-                              </bool>
-                           </term>
-                        </expr>
-                        <statements>
-                           <statement>
-                              <if-else>
-                                 <expr>
-                                    <term>
-                                       <bool>
-                                          <tf>true</tf>
-                                       </bool>
-                                    </term>
-                                 </expr>
-                                 <statements>
-                                 </statements>
-                                 <statements>
-                                 </statements>
-                              </if-else>
-                           </statement>
-                        </statements>
-                        <statements>
-                        </statements>
-                     </if-else>
-                  </statement>
-                  <statement>
                      <return>
                      </return>
                   </statement>

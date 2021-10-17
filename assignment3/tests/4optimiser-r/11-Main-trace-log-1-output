@@ -1,42 +1,6 @@
 <class>
    <class-name>Main</class-name>
    <class-var-decs>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>aa</var-name>
-         <var-offset>0</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s0</var-name>
-         <var-offset>1</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s1</var-name>
-         <var-offset>2</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s2</var-name>
-         <var-offset>3</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s3</var-name>
-         <var-offset>4</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>s4</var-name>
-         <var-offset>5</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
    </class-var-decs>
    <class-var-decs>
       <var-dec>
@@ -201,12 +165,6 @@
                      <var-offset>0</var-offset>
                      <var-type>Main</var-type>
                   </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>b</var-name>
-                     <var-offset>1</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
                </var-decs>
                <statements>
                   <statement>
@@ -227,45 +185,6 @@
                                     </expr-list>
                                  </subr-call>
                               </call-as-function>
-                           </term>
-                        </expr>
-                     </let>
-                  </statement>
-                  <statement>
-                     <return>
-                     </return>
-                  </statement>
-                  <statement>
-                     <let>
-                        <var>
-                           <var-segment>local</var-segment>
-                           <var-name>b</var-name>
-                           <var-offset>1</var-offset>
-                           <var-type>int</var-type>
-                        </var>
-                        <expr>
-                           <term>
-                              <call-as-method>
-                                 <class-name>Main</class-name>
-                                 <var>
-                                    <var-segment>local</var-segment>
-                                    <var-name>mm</var-name>
-                                    <var-offset>0</var-offset>
-                                    <var-type>Main</var-type>
-                                 </var>
-                                 <subr-call>
-                                    <subr-name>returnaa</subr-name>
-                                    <expr-list>
-                                       <expr>
-                                          <term>
-                                             <int>
-                                                <ic>42</ic>
-                                             </int>
-                                          </term>
-                                       </expr>
-                                    </expr-list>
-                                 </subr-call>
-                              </call-as-method>
                            </term>
                         </expr>
                      </let>

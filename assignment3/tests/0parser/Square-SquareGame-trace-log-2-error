@@ -1,5 +1,18 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+    2: parse_constructor()
+    3: parse_subr_body()
+    4: parse_statements()
+    5: parse_statement()
+    6: parse_let()
+    7: parse_expr()
+    8: parse_term()
+    9: parse_var_term()
+error: ***** Error:
+ 24:     constructor SquareGame new() {
+ 25:         let square = Square.n
+                                ^
+Square must be a declared variable
 

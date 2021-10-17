@@ -1,0 +1,13 @@
+class Main {
+    static int x;
+
+    function string main() {
+        if ((6 - 7) + 4 / 2 * (2 - 1) +10){
+            return "1111111111";
+        } else{
+            return "2222222222";
+        }
+
+        return 3;
+    }
+}

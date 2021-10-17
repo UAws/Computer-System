@@ -25,45 +25,6 @@
                            </term>
                         </expr>
                         <statements>
-                           <statement>
-                              <while>
-                                 <expr>
-                                    <term>
-                                       <bool>
-                                          <tf>false</tf>
-                                       </bool>
-                                    </term>
-                                 </expr>
-                                 <statements>
-                                 </statements>
-                              </while>
-                           </statement>
-                        </statements>
-                     </while>
-                  </statement>
-                  <statement>
-                     <while>
-                        <expr>
-                           <term>
-                              <bool>
-                                 <tf>false</tf>
-                              </bool>
-                           </term>
-                        </expr>
-                        <statements>
-                           <statement>
-                              <while>
-                                 <expr>
-                                    <term>
-                                       <bool>
-                                          <tf>true</tf>
-                                       </bool>
-                                    </term>
-                                 </expr>
-                                 <statements>
-                                 </statements>
-                              </while>
-                           </statement>
                         </statements>
                      </while>
                   </statement>

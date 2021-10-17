@@ -1,2 +1,6 @@
-nullptr passed to jsymbols_pop
+***** Error:
+ 12:    function void main() {
+ 13:        do Output.p
+                     ^
+Output must be a declared variable
 

@@ -1,5 +1,18 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+    2: parse_constructor()
+    3: parse_subr_body()
+    4: parse_method()
+    5: parse_subr_body()
+    6: parse_statements()
+    7: parse_statement()
+    8: parse_do()
+    9: parse_void_var_call()
+error: ***** Error:
+ 35:         do square.dispose();
+ 36:         do Memory.d
+                      ^
+Memory must be a declared variable
 

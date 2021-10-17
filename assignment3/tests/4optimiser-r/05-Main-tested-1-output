@@ -16,21 +16,6 @@
                </var-decs>
                <statements>
                   <statement>
-                     <if-else>
-                        <expr>
-                           <term>
-                              <bool>
-                                 <tf>false</tf>
-                              </bool>
-                           </term>
-                        </expr>
-                        <statements>
-                        </statements>
-                        <statements>
-                        </statements>
-                     </if-else>
-                  </statement>
-                  <statement>
                      <return>
                      </return>
                   </statement>

@@ -1,0 +1,10 @@
+ID,Kind,Path,Program,Arguments,Output,Error,Status,Short-Description,Long-Description
+r02,filter,02-Main,optimiser-r,,yes,yes,0,02/Main.jack,02/Main.jack
+r04,filter,04-Main,optimiser-r,,yes,yes,0,04/Main.jack,04/Main.jack
+r05,filter,05-Main,optimiser-r,,yes,yes,0,05/Main.jack,05/Main.jack
+r06,filter,06-Main,optimiser-r,,yes,yes,0,06/Main.jack,06/Main.jack
+r10,filter,10-Main,optimiser-r,,yes,yes,0,10/Main.jack,10/Main.jack
+r11,filter,11-Main,optimiser-r,,yes,yes,0,11/Main.jack,11/Main.jack
+r16,filter,16-Main,optimiser-r,,yes,yes,0,16/Main.jack,16/Main.jack
+r20,filter,20-Main,optimiser-r,,yes,yes,0,20/Main.jack,20/Main.jack
+r24,filter,ConvertB-Main,optimiser-r,,yes,yes,0,ConvertB/Main.jack,ConvertB/Main.jack

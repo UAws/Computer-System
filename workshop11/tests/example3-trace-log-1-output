@@ -1,0 +1,46 @@
+function Main.main 1
+push local 0
+push local 0
+lt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 3
+pop local 0
+push constant 3
+push constant 3
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+goto IF_END1
+label IF_FALSE1
+label WHILE_EXP0
+push local 0
+push constant 2
+gt
+not
+if-goto WHILE_END0
+push constant 564
+pop local 0
+push local 0
+push constant 562
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+label WHILE_EXP1
+push local 0
+push constant 8
+lt
+not
+if-goto WHILE_END1
+goto WHILE_EXP1
+label WHILE_END1
+label IF_FALSE2
+goto WHILE_EXP0
+label WHILE_END0
+label IF_END1
+label IF_FALSE0
+push constant 0
+return

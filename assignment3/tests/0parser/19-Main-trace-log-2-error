@@ -1,5 +1,24 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+    2: parse_function()
+    3: parse_subr_body()
+    4: parse_statements()
+    5: parse_statement()
+    6: parse_let()
+    7: parse_statement()
+    8: parse_let()
+    9: parse_expr()
+   10: parse_term()
+   11: parse_expr()
+   12: parse_term()
+   13: parse_expr()
+   14: parse_term()
+   15: parse_var_term()
+error: ***** Error:
+ 8:         let b = d > d ;
+ 9:         let c = (b * X.x
+                          ^
+X must be a declared variable
 

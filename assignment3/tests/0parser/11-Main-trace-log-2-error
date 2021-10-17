@@ -1,5 +1,19 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+    2: parse_method()
+    3: parse_method()
+    4: parse_subr_body()
+    5: parse_statements()
+    6: parse_statement()
+    7: parse_return()
+    8: parse_expr()
+    9: parse_term()
+   10: parse_var_term()
+error: ***** Error:
+ 17:         {
+ 18:                 return returnbb(z
+                                    ^
+returnbb must be a declared variable
 

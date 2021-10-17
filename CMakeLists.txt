@@ -39,5 +39,6 @@ conan_cmake_run(REQUIRES
 conan_basic_setup()
 
 add_subdirectory(assignment3)
+add_subdirectory(workshop11)
 add_subdirectory(assignment2)
 #add_executable(cs_projects main.cpp)

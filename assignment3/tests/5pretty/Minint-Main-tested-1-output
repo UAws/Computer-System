@@ -1,0 +1,9 @@
+class Main
+{
+// public:
+  function void main()
+  {
+    do Output::printInt(0 - 32767 - 1) ;
+    return ;
+  }
+}

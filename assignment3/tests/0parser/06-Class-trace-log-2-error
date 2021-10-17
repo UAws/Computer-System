@@ -1,5 +1,10 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+error: 
+ 3:     field char f ;
+ 4:     static 
+        ^
+Found token "static" but expected "}"
 

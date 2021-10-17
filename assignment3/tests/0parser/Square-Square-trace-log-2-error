@@ -1,5 +1,19 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_subr_decs()
+    2: parse_constructor()
+    3: parse_subr_body()
+    4: parse_statements()
+    5: parse_statement()
+    6: parse_statement()
+    7: parse_statement()
+    8: parse_statement()
+    9: parse_do()
+   10: parse_void_var_call()
+error: 
+ 24: 
+ 25:         do draw()
+                    ^
+Did not find token "'.' or '::'" but found "("
 

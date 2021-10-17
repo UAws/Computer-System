@@ -1,24 +1,6 @@
 <class>
    <class-name>Main</class-name>
    <class-var-decs>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>A</var-name>
-         <var-offset>0</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>B</var-name>
-         <var-offset>1</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
-      <var-dec>
-         <var-segment>static</var-segment>
-         <var-name>C</var-name>
-         <var-offset>2</var-offset>
-         <var-type>int</var-type>
-      </var-dec>
    </class-var-decs>
    <class-var-decs>
       <var-dec>
@@ -71,36 +53,6 @@
                      <var-segment>local</var-segment>
                      <var-name>e</var-name>
                      <var-offset>4</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>f</var-name>
-                     <var-offset>5</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>g</var-name>
-                     <var-offset>6</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>h</var-name>
-                     <var-offset>7</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>i</var-name>
-                     <var-offset>8</var-offset>
-                     <var-type>int</var-type>
-                  </var-dec>
-                  <var-dec>
-                     <var-segment>local</var-segment>
-                     <var-name>j</var-name>
-                     <var-offset>9</var-offset>
                      <var-type>int</var-type>
                   </var-dec>
                </var-decs>

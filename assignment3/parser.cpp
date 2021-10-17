@@ -1,7 +1,8 @@
 //
 //
-// Author: axxxxxxx
-// Name:   ... ...
+// Author : Akide Liu
+// Date : 12/10/21
+// Student ID : A1743748
 //
 
 #include <string>
@@ -11,10 +12,10 @@
 #include "abstract-syntax-tree.h"
 
 // to shorten our code:
-using namespace std ;
-using namespace CS_IO_Buffers ;
-using namespace CS_Symbol_Tables ;
-using namespace Jack_Compiler ;
+using namespace std;
+using namespace CS_IO_Buffers;
+using namespace CS_Symbol_Tables;
+using namespace Jack_Compiler;
 
 #pragma clang diagnostic ignored "-Wunused-function"
 
@@ -74,15 +75,21 @@ using namespace Jack_Compiler ;
 //
 
 // what kind of subroutinue is being parsed?
-enum Now_Parsing { Class, Constructor, Function, Method } ;
-static Now_Parsing now_parsing ;
+enum Now_Parsing
+{
+    Class,
+    Constructor,
+    Function,
+    Method
+};
+static Now_Parsing now_parsing;
 
 // symbol tables
-static void push_symbol_table() ;
-static void pop_symbol_table() ;
-static ast declare_variable(Token name,Token type,string segment) ;
-static ast lookup_variable(Token name) ;
-static ast lookup_variable_fatal(Token name) ;
+static void push_symbol_table();
+static void pop_symbol_table();
+static ast declare_variable(Token name, Token type, string segment);
+static ast lookup_variable(Token name);
+static ast lookup_variable_fatal(Token name);
 
 // ***** The Jack grammar to be recognised *****
 //
@@ -120,61 +127,81 @@ static ast lookup_variable_fatal(Token name) ;
 // method_call      ::= tk_stop tk_identifier tk_lrb expr_list tk_rrb
 // expr_list        ::= (expr (tk_comma expr)*)?
 
-
 // forward declarations of one function per non-terminal rule in the Jack grammar - except for program
 //
-static ast parse_class() ;
-static ast parse_static_var_decs() ;
-static ast parse_static_var_dec() ;
-static ast parse_field_var_decs() ;
-static ast parse_field_var_dec() ;
-static ast parse_subr_decs() ;
-static ast parse_constructor() ;
-static ast parse_function() ;
-static ast parse_method() ;
-static ast parse_param_list() ;
-static ast parse_subr_body() ;
-static ast parse_var_decs() ;
-static ast parse_var_dec() ;
+static ast parse_class();
+static ast parse_static_var_decs();
+static ast parse_static_var_dec();
+static ast parse_field_var_decs();
+static ast parse_field_var_dec();
+static ast parse_subr_decs();
+static ast parse_constructor();
+static ast parse_function();
+static ast parse_method();
+static ast parse_param_list();
+static ast parse_subr_body();
+static ast parse_var_decs();
+static ast parse_var_dec();
 
-static ast parse_statements() ;
-static ast parse_statement() ;
-static ast parse_let() ;
-static ast parse_if() ;
-static ast parse_while() ;
-static ast parse_do() ;
-static ast parse_void_var_call() ;
-static ast parse_void_this_call() ;
-static ast parse_return() ;
+static ast parse_statements();
+static ast parse_statement();
+static ast parse_let();
+static ast parse_if();
+static ast parse_while();
+static ast parse_do();
+static ast parse_void_var_call();
+static ast parse_void_this_call();
+static ast parse_return();
 
-static ast parse_expr() ;
-static ast parse_term() ;
-static ast parse_var_term() ;
-static ast parse_this_term() ;
-static ast parse_index() ;
-static ast parse_fn_call() ;
-static ast parse_method_call() ;
-static ast parse_expr_list() ;
+static ast parse_expr();
+static ast parse_term();
+static ast parse_var_term();
+static ast parse_this_term();
+static ast parse_index();
+static ast parse_fn_call();
+static ast parse_method_call();
+static ast parse_expr_list();
+
+static string local_class_name;
+
+static void local_fatal_error(string message)
+{
+    fatal_error(0, "***** Error:\n" + token_context() + message);
+}
 
 // class ::= tk_class tk_identifier tk_lcb static_var_decs field_var_decs subr_decs tk_rcb
 // create_class(myclassname,statics,fields,class_subrs)
 static ast parse_class()
 {
-    push_error_context("parse_class()") ;
+    push_error_context("parse_class()");
 
     // the class needs new symbol tables for its static and field variables
-    now_parsing = Class ;
-    push_symbol_table() ;
+    now_parsing = Class;
+    push_symbol_table();
 
     // add code here ...
+    mustbe(tk_class);
+    local_class_name = token_spelling(mustbe(tk_identifier));
+    mustbe(tk_lcb);
+    ast static_vars = parse_static_var_decs();
+    ast field_vars = parse_field_var_decs();
+
+    if (static_vars == nullptr && field_vars == nullptr)
+    {
+        did_not_find(tg_class_var);
+    }
+
+    ast subr_decs = parse_subr_decs();
+    mustbe(tk_rcb);
 
     // delete the statics and fields symbol tables
-    pop_symbol_table() ;
-    pop_symbol_table() ;
+    pop_symbol_table();
+    pop_symbol_table();
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast ret = create_class(local_class_name, static_vars, field_vars, subr_decs);
+    pop_error_context();
+    // fatal_error(0,"123");
+    return ret;
 }
 
 // static_var_decs ::= static_var_dec*
@@ -183,13 +210,19 @@ static ast parse_class()
 //
 static ast parse_static_var_decs()
 {
-    push_error_context("parse_static_var_decs()") ;
+    push_error_context("parse_static_var_decs()");
 
     // add code here ...
+    vector<ast> var_decs;
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    while (have(tk_static))
+    {
+        var_decs.push_back(parse_static_var_dec());
+    }
+
+    ast ret = create_class_var_decs(var_decs);
+    pop_error_context();
+    return ret;
 }
 
 // static_var_dec ::= tk_static tg_type tk_identifier (tk_comma tk_identifier)* tk_semi
@@ -200,13 +233,28 @@ static ast parse_static_var_decs()
 //
 static ast parse_static_var_dec()
 {
-    push_error_context("parse_static_var_dec()") ;
+    push_error_context("parse_static_var_dec()");
 
     // add code here ...
+    vector<ast> decs;
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    mustbe(tk_static);
+    Token type = mustbe(tg_type);
+    Token name = mustbe(tk_identifier);
+    decs.push_back(declare_variable(name, type, "static"));
+
+    while (have(tk_comma))
+    {
+        mustbe(tk_comma);
+        name = mustbe(tk_identifier);
+        decs.push_back(declare_variable(name, type, "static"));
+    }
+
+    mustbe(tk_semi);
+
+    ast ret = create_var_decs(decs);
+    pop_error_context();
+    return ret;
 }
 
 // field_var_decs ::= field_var_dec*
@@ -215,16 +263,22 @@ static ast parse_static_var_dec()
 //
 static ast parse_field_var_decs()
 {
-    push_error_context("parse_field_var_decs()") ;
+    push_error_context("parse_field_var_decs()");
 
     // create a new symbol table for the fields - delete at the end of parsing the class
-    push_symbol_table() ;
+    push_symbol_table();
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    vector<ast> decs;
+    while (have(tk_field))
+    {
+        decs.push_back(parse_field_var_dec());
+    }
+
+    ast ret = create_class_var_decs(decs);
+    pop_error_context();
+    return ret;
 }
 
 // field_var_dec ::= tk_field tg_type tk_identifier (tk_comma tk_identifier)* tk_semi
@@ -235,13 +289,27 @@ static ast parse_field_var_decs()
 //
 static ast parse_field_var_dec()
 {
-    push_error_context("parse_field_var_dec()") ;
+    push_error_context("parse_field_var_dec()");
 
     // add code here ...
+    vector<ast> decs;
+    mustbe(tk_field);
+    Token type = mustbe(tg_type);
+    Token name = mustbe(tk_identifier);
+    decs.push_back(declare_variable(name, type, "this"));
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    while (have(tk_comma))
+    {
+        mustbe(tk_comma);
+        name = mustbe(tk_identifier);
+        decs.push_back(declare_variable(name, type, "this"));
+    }
+
+    mustbe(tk_semi);
+
+    ast ret = create_var_decs(decs);
+    pop_error_context();
+    return ret;
 }
 
 // subr_decs ::= (constructor | function | method)*
@@ -253,13 +321,38 @@ static ast parse_field_var_dec()
 //
 static ast parse_subr_decs()
 {
-    push_error_context("parse_subr_decs()") ;
+    push_error_context("parse_subr_decs()");
 
+    vector<ast> subrs;
     // add code here ...
+    if (!have(tg_subroutine))
+    {
+        return create_subr_decs(subrs);
+    }
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    while (have(tg_subroutine))
+    {
+        switch (token_kind())
+        {
+        case tk_constructor:
+            subrs.push_back(create_subr(parse_constructor()));
+            break;
+        case tk_function:
+            subrs.push_back(create_subr(parse_function()));
+            break;
+        case tk_method:
+            subrs.push_back(create_subr(parse_method()));
+            break;
+
+        default:
+            did_not_find(tg_subroutine);
+            break;
+        }
+    }
+
+    ast ret = create_subr_decs(subrs);
+    pop_error_context();
+    return ret;
 }
 
 // constructor ::= tk_constructor tk_identifier tk_identifier tk_lrb param_list tk_rrb subr_body
@@ -271,21 +364,36 @@ static ast parse_subr_decs()
 //
 static ast parse_constructor()
 {
-    push_error_context("parse_constructor()") ;
+    push_error_context("parse_constructor()");
 
     // the constructor needs a new symbol table for its parameters and local variables
-    now_parsing = Constructor ;
-    push_symbol_table() ;
+    now_parsing = Constructor;
+    push_symbol_table();
 
     // add code here ...
+    mustbe(tk_constructor);
+    string type = token_spelling(mustbe(tk_identifier));
+    string name = type;
+    if (name != local_class_name)
+    {
+        fatal_token_context("constructor return type must be its own class\n");
+    }
+    string constructor_return = token_spelling(mustbe(tk_identifier));
+
+    mustbe(tk_lrb);
+    ast params = parse_param_list();
+    mustbe(tk_rrb);
+    ast subr_body = parse_subr_body();
 
     // delete the constructor's symbol table
-    pop_symbol_table() ;
+    pop_symbol_table();
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast ret = create_constructor(type, "new", params, subr_body);
+    pop_error_context();
+    return ret;
 }
+
+static string current_function_type;
 
 // function ::= tk_function tg_vtype tk_identifier tk_lrb param_list tk_rrb subr_body
 // returns ast_function: create_function(string vtype,string name,ast params,ast body)
@@ -293,23 +401,31 @@ static ast parse_constructor()
 // . name: the function's name within its class
 // . params: ast_param_list - the function's parameters
 // . body: ast_subr_body - the function's body
-//
+// TODO fatal_token_context("a function cannot access this\n") ;
 static ast parse_function()
 {
-    push_error_context("parse_function()") ;
+    push_error_context("parse_function()");
 
     // the function needs a new symbol table for its parameters and local variables
-    now_parsing = Function ;
-    push_symbol_table() ;
+    now_parsing = Function;
+    push_symbol_table();
 
     // add code here ...
+    mustbe(tk_function);
+    string type = token_spelling(mustbe(tg_vtype));
+    current_function_type = type;
+    string name = token_spelling(mustbe(tk_identifier));
+    mustbe(tk_lrb);
+    ast params = parse_param_list();
+    mustbe(tk_rrb);
+    ast subr_body = parse_subr_body();
 
     // delete the function's symbol table
-    pop_symbol_table() ;
+    pop_symbol_table();
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast ret = create_function(type, name, params, subr_body);
+    pop_error_context();
+    return ret;
 }
 
 // method ::= tk_method tg_vtype tk_identifier tk_lrb param_list tk_rrb subr_body
@@ -321,20 +437,29 @@ static ast parse_function()
 //
 static ast parse_method()
 {
-    push_error_context("parse_method()") ;
+    push_error_context("parse_method()");
 
     // the method needs a new symbol table for its parameters and local variables
-    now_parsing = Method ;
-    push_symbol_table() ;
+    now_parsing = Method;
+    push_symbol_table();
 
     // add code here ...
 
-    // delete the method's symbol table
-    pop_symbol_table() ;
+    mustbe(tk_method);
+    string type = token_spelling(mustbe(tg_vtype));
+    current_function_type = type;
+    string name = token_spelling(mustbe(tk_identifier));
+    mustbe(tk_lrb);
+    ast params = parse_param_list();
+    mustbe(tk_rrb);
+    ast body = parse_subr_body();
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    // delete the method's symbol table
+    pop_symbol_table();
+
+    ast ret = create_method(type, name, params, body);
+    pop_error_context();
+    return ret;
 }
 
 // param_list ::= ((tg_type tk_identifier) (tk_comma tg_type tk_identifier)*)?
@@ -345,13 +470,31 @@ static ast parse_method()
 //
 static ast parse_param_list()
 {
-    push_error_context("parse_param_list()") ;
+    push_error_context("parse_param_list()");
 
     // add code here ...
+    vector<ast> params;
+    Token name, type;
+    string segment = "argument";
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    if (have(tg_type))
+    {
+        type = mustbe(tg_type);
+        name = mustbe(tk_identifier);
+        params.push_back(declare_variable(name, type, segment));
+
+        while (have(tk_comma))
+        {
+            mustbe(tk_comma);
+            type = mustbe(tg_type);
+            name = mustbe(tk_identifier);
+            params.push_back(declare_variable(name, type, segment));
+        }
+    }
+
+    ast ret = create_param_list(params);
+    pop_error_context();
+    return ret;
 }
 
 // subr_body ::= tk_lcb var_decs statements tk_rcb
@@ -362,13 +505,24 @@ static ast parse_param_list()
 //
 static ast parse_subr_body()
 {
-    push_error_context("parse_subr_body()") ;
+    push_error_context("parse_subr_body()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    mustbe(tk_lcb);
+    ast var_decs = parse_var_decs();
+    ast statements = parse_statements();
+
+    if (size_of_statements(statements) == 0)
+    {
+        local_fatal_error("subroutine must finish with a return statement");
+    }
+
+    mustbe(tk_rcb);
+
+    ast ret = create_subr_body(var_decs, statements);
+    pop_error_context();
+    return ret;
 }
 
 // var_decs ::= var_dec*
@@ -377,13 +531,18 @@ static ast parse_subr_body()
 //
 static ast parse_var_decs()
 {
-    push_error_context("parse_var_decs()") ;
+    push_error_context("parse_var_decs()");
 
     // add code here ...
+    vector<ast> decs;
+    while (have(tk_var))
+    {
+        decs.push_back(parse_var_dec());
+    }
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast ret = create_var_decs(decs);
+    pop_error_context();
+    return ret;
 }
 
 // var_dec ::= tk_var tg_type tk_identifier (tk_comma tk_identifier)* tk_semi
@@ -394,13 +553,29 @@ static ast parse_var_decs()
 //
 static ast parse_var_dec()
 {
-    push_error_context("parse_var_dec()") ;
+    push_error_context("parse_var_dec()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    vector<ast> decs;
+    string segment = "local";
+    Token name, type;
+
+    mustbe(tk_var);
+    type = mustbe(tg_type);
+    name = mustbe(tk_identifier);
+    decs.push_back(declare_variable(name, type, segment));
+    while (have(tk_comma))
+    {
+        mustbe(tk_comma);
+        name = mustbe(tk_identifier);
+        decs.push_back(declare_variable(name, type, segment));
+    }
+    mustbe(tk_semi);
+
+    ast ret = create_var_decs(decs);
+    pop_error_context();
+    return ret;
 }
 
 // statements ::= statement*
@@ -409,13 +584,19 @@ static ast parse_var_dec()
 //
 static ast parse_statements()
 {
-    push_error_context("parse_statements()") ;
+    push_error_context("parse_statements()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    vector<ast> statements;
+    while (have(tg_statement))
+    {
+        statements.push_back(parse_statement());
+    }
+
+    ast ret = create_statements(statements);
+    pop_error_context();
+    return ret;
 }
 
 // statement ::= let | if | while | do | return
@@ -424,13 +605,41 @@ static ast parse_statements()
 //
 static ast parse_statement()
 {
-    push_error_context("parse_statement()") ;
+    push_error_context("parse_statement()");
+
+    if (now_parsing == Function && token_context().find("this") != std::string::npos)
+    {
+        fatal_token_context("a function cannot access this\n");
+    }
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast statement = nullptr;
+    switch (token_kind())
+    {
+    case tk_let:
+        statement = parse_let();
+        break;
+    case tk_if:
+        statement = parse_if();
+        break;
+    case tk_while:
+        statement = parse_while();
+        break;
+    case tk_do:
+        statement = parse_do();
+        break;
+    case tk_return:
+        statement = parse_return();
+        break;
+    default:
+        did_not_find(tg_statement);
+        break;
+    }
+
+    ast ret = create_statement(statement);
+    pop_error_context();
+    return ret;
 }
 
 // let ::= tk_let tk_identifier index? tk_assign expr tk_semi
@@ -447,13 +656,26 @@ static ast parse_statement()
 //
 static ast parse_let()
 {
-    push_error_context("parse_let()") ;
+    push_error_context("parse_let()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast index = nullptr;
+
+    mustbe(tk_let);
+    Token var = mustbe(tk_identifier);
+    ast ast_var = lookup_variable_fatal(var);
+    if (have(tk_lsb))
+    {
+        index = parse_index();
+    }
+    mustbe(tk_assign);
+    ast expr = parse_expr();
+    mustbe(tk_semi);
+
+    ast ret = index == nullptr ? create_let(ast_var, expr) : create_let_array(ast_var, index, expr);
+    pop_error_context();
+    return ret;
 }
 
 // if ::= tk_if tk_lrb expr tk_rrb tk_lcb statements tk_rcb (tk_else tk_lcb statements tk_rcb)?
@@ -470,13 +692,31 @@ static ast parse_let()
 //
 static ast parse_if()
 {
-    push_error_context("parse_if()") ;
+    push_error_context("parse_if()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast inner_statements = nullptr;
+
+    mustbe(tk_if);
+    mustbe(tk_lrb);
+    ast expr = parse_expr();
+    mustbe(tk_rrb);
+    mustbe(tk_lcb);
+    ast statements = parse_statements();
+    mustbe(tk_rcb);
+
+    if (have(tk_else))
+    {
+        mustbe(tk_else);
+        mustbe(tk_lcb);
+        inner_statements = parse_statements();
+        mustbe(tk_rcb);
+    }
+
+    ast ret = inner_statements == nullptr ? create_if(expr, statements) : create_if_else(expr, statements, inner_statements);
+    pop_error_context();
+    return ret;
 }
 
 // while ::= tk_while tk_lrb expr tk_rrb tk_lcb statements tk_rcb
@@ -486,15 +726,22 @@ static ast parse_if()
 //
 static ast parse_while()
 {
-    push_error_context("parse_while()") ;
+    push_error_context("parse_while()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
-}
+    mustbe(tk_while);
+    mustbe(tk_lrb);
+    ast expr = parse_expr();
+    mustbe(tk_rrb);
+    mustbe(tk_lcb);
+    ast statements = parse_statements();
+    mustbe(tk_rcb);
 
+    ast ret = create_while(expr, statements);
+    pop_error_context();
+    return ret;
+}
 
 // do ::= tk_do (void_var_call | void_this_call) tk_semi
 // returns ast_do: create_do(ast call)
@@ -502,13 +749,34 @@ static ast parse_while()
 //
 static ast parse_do()
 {
-    push_error_context("parse_do()") ;
+    push_error_context("parse_do()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast call = nullptr;
+
+    mustbe(tk_do);
+    if (have(tk_identifier))
+    {
+        // void_var_call
+
+        call = parse_void_var_call();
+    }
+    else if (have(tk_this))
+    {
+        // void_this_call
+
+        call = parse_void_this_call();
+    }
+    else
+    {
+        did_not_find(tg_void_call);
+    }
+    mustbe(tk_semi);
+
+    ast ret = create_do(call);
+    pop_error_context();
+    return ret;
 }
 
 // void_var_call    ::= tk_identifier (fn_call | method_call)
@@ -527,13 +795,47 @@ static ast parse_do()
 //
 static ast parse_void_var_call()
 {
-    push_error_context("parse_void_var_call()") ;
+    push_error_context("parse_void_var_call()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    string current_class_name;
+    Token name = mustbe(tk_identifier);
+    ast var;
+    if (have(tk_fn)) {
+        current_class_name = token_spelling(name);
+    } else {
+        var = lookup_variable(name);
+    }
+
+    ast call = nullptr;
+    ast ret = create_empty();
+
+    if (have(tk_fn))
+    {
+        // fn_call
+
+        call = parse_fn_call();
+        ret = create_call_as_function(current_class_name, call);
+    }
+    else if (have(tk_stop))
+    {
+        // method_call
+
+        if (var == nullptr)
+        {
+            local_fatal_error(token_spelling(name) + " must be a declared variable");
+        }
+        call = parse_method_call();
+        ret = create_call_as_method(get_var_type(var), var, call);
+    }
+    else
+    {
+        did_not_find(Jack_Compiler::tg_stop_fn);
+    }
+
+    pop_error_context();
+    return ret;
 }
 
 // void_this_call ::= tk_this method_call
@@ -549,13 +851,16 @@ static ast parse_void_var_call()
 //
 static ast parse_void_this_call()
 {
-    push_error_context("parse_void_this_call()") ;
+    push_error_context("parse_void_this_call()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    mustbe(tk_this);
+    ast method_call = parse_method_call();
+
+    ast ret = create_call_as_method(local_class_name, create_this(), method_call);
+    pop_error_context();
+    return ret;
 }
 
 // return ::= tk_return expr? tk_semi
@@ -568,13 +873,38 @@ static ast parse_void_this_call()
 //
 static ast parse_return()
 {
-    push_error_context("parse_return()") ;
+    push_error_context("parse_return()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast expr = nullptr;
+
+    mustbe(tk_return);
+
+    if (have(tg_expression) && current_function_type == "void")
+    {
+        fatal_token_context("returning a value from a void function or method\n");
+    }
+
+    if (!have(tg_expression) && current_function_type != "void")
+    {
+        fatal_token_context("not returning a value from a non-void function or method\n");
+    }
+
+    if (now_parsing == Constructor)
+    {
+        mustbe(tk_this);
+        expr = create_expr(create_term(create_this()));
+    }
+    else if (have(tg_expression))
+    {
+        expr = parse_expr();
+    }
+    mustbe(tk_semi);
+
+    ast ret = expr == nullptr ? create_return() : create_return_expr(expr);
+    pop_error_context();
+    return ret;
 }
 
 // expr ::= term (tg_infix_op expr)?
@@ -588,13 +918,22 @@ static ast parse_return()
 //
 static ast parse_expr()
 {
-    push_error_context("parse_expr()") ;
+    push_error_context("parse_expr()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast op = nullptr, rhs = nullptr;
+
+    ast lhs = parse_term();
+    if (have(tg_infix_op))
+    {
+        op = create_infix_op(token_spelling(mustbe(tg_infix_op)));
+        rhs = create_term(parse_expr());
+    }
+
+    ast ret = op == nullptr ? create_expr(lhs) : create_expr(lhs, op, rhs);
+    pop_error_context();
+    return ret;
 }
 
 // term ::= tk_integer | tk_string | tk_true | tk_false | tk_null | (tk_lrb expr tk_rrb) | (tg_unary_op term) | var_term | this_term
@@ -620,13 +959,66 @@ static ast parse_expr()
 //
 static ast parse_term()
 {
-    push_error_context("parse_term()") ;
+    push_error_context("parse_term()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast ast_result = nullptr;
+
+    switch (token_kind())
+    {
+    case tk_integer:
+        ast_result = create_int(stoi(token_spelling(mustbe(tk_integer))));
+        break;
+    case tk_string:
+        ast_result = create_string(token_spelling(mustbe(tk_string)));
+        break;
+    case tk_true:
+        mustbe(tk_true);
+        ast_result = create_bool(true);
+        break;
+    case tk_false:
+        mustbe(tk_false);
+        ast_result = create_bool(false);
+        break;
+    case tk_null:
+        mustbe(tk_null);
+        ast_result = create_null();
+        break;
+    case tk_lrb:
+    {
+        mustbe(tk_lrb);
+        ast_result = parse_expr();
+        mustbe(tk_rrb);
+        break;
+    }
+
+    // tg_unary_op , no idea why switch case can not stop at tg_unary_op when input is tk_sub
+
+    case tk_sub:
+    case tk_not:
+    {
+        string op = token_spelling(mustbe(tg_unary_op));
+        ast term = parse_term();
+        ast_result = create_unary_op(op, term);
+        break;
+    }
+    case tk_identifier:
+        // var_term
+        ast_result = parse_var_term();
+        break;
+    case tk_this:
+        // parse_this_term
+        ast_result = parse_this_term();
+        break;
+    default:
+        did_not_find(tg_term);
+        break;
+    }
+
+    ast ret = create_term(ast_result);
+    pop_error_context();
+    return ret;
 }
 
 // var_term ::= tk_identifier (index | fn_call | method_call)?
@@ -652,13 +1044,55 @@ static ast parse_term()
 //
 static ast parse_var_term()
 {
-    push_error_context("parse_var_term()") ;
+    push_error_context("parse_var_term()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    string current_class_name;
+    Token name = mustbe(tk_identifier);
+    ast var;
+    if (have(tk_fn)) {
+        current_class_name = token_spelling(name);
+    } else {
+        var = lookup_variable_fatal(name);
+    }
+
+    // just a tk_identifier
+
+    if (!(have(tk_lsb) || have(tk_fn) || have(tk_stop)))
+    {
+        return var;
+    }
+
+    ast temp = nullptr;
+    switch (token_kind())
+    {
+    case tk_lsb:
+    {
+        temp = parse_index();
+        return create_array_index(var, temp);
+        break;
+    }
+    case tk_fn:
+    {
+        temp = parse_fn_call();
+        return create_call_as_function(current_class_name, temp);
+        break;
+    }
+    case tk_stop:
+    {
+        temp = parse_method_call();
+        return create_call_as_method(get_var_type(var), var, temp);
+        break;
+    }
+
+    default:
+        break;
+    }
+
+    ast ret = create_empty();
+    pop_error_context();
+    return ret;
 }
 
 // this_term ::= tk_this method_call?
@@ -674,26 +1108,39 @@ static ast parse_var_term()
 //
 static ast parse_this_term()
 {
-    push_error_context("parse_this_term()") ;
+    push_error_context("parse_this_term()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast subr_call = nullptr;
+
+    mustbe(tk_this);
+
+    if (have(tk_stop))
+    {
+        subr_call = parse_method_call();
+    }
+
+    ast ret = subr_call == nullptr ? create_this() : create_call_as_method(local_class_name, create_this(), subr_call);
+    pop_error_context();
+    return ret;
 }
 
 // index ::= tk_lsb expr tk_rsb
 // returns ast_expr
 static ast parse_index()
 {
-    push_error_context("parse_index()") ;
+    push_error_context("parse_index()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    mustbe(tk_lsb);
+    ast expr = parse_expr();
+    mustbe(tk_rsb);
+
+    ast ret = expr;
+    pop_error_context();
+    return ret;
 }
 
 // fn_call ::= tk_fn tk_identifier tk_lrb expr_list tk_rrb
@@ -704,13 +1151,20 @@ static ast parse_index()
 //
 static ast parse_fn_call()
 {
-    push_error_context("parse_fn_call()") ;
+    push_error_context("parse_fn_call()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    mustbe(tk_fn);
+    string name = token_spelling(mustbe(tk_identifier));
+    mustbe(tk_lrb);
+    ast expr_list = parse_expr_list();
+    mustbe(tk_rrb);
+
+    ast ret = create_subr_call(name, expr_list);
+    ;
+    pop_error_context();
+    return ret;
 }
 
 // method_call ::= tk_stop tk_identifier tk_lrb expr_list tk_rrb
@@ -721,28 +1175,45 @@ static ast parse_fn_call()
 //
 static ast parse_method_call()
 {
-    push_error_context("parse_method_call()") ;
+    push_error_context("parse_method_call()");
 
     // add code here ...
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    mustbe(tk_stop);
+    string name = token_spelling(mustbe(tk_identifier));
+    ;
+    mustbe(tk_lrb);
+    ast expr_list = parse_expr_list();
+    mustbe(tk_rrb);
+
+    ast ret = create_subr_call(name, expr_list);
+    pop_error_context();
+    return ret;
 }
 
 // expr_list ::= (expr (tk_comma expr)*)?
 // returns ast_expr_list: create_expr_list(vector<ast> exprs)
-// create_expr_list must be passed: a vector of ast_expr
+// create_expr_list must be pashsed: a vector of ast_expr
 //
 static ast parse_expr_list()
 {
-    push_error_context("parse_expr_list()") ;
+    push_error_context("parse_expr_list()");
 
     // add code here ...
+    vector<ast> exprs;
+    if (have(tg_term))
+    {
+        exprs.push_back(parse_expr());
+        while (have(tk_comma))
+        {
+            mustbe(tk_comma);
+            exprs.push_back(parse_expr());
+        }
+    }
 
-    ast ret = create_empty() ;
-    pop_error_context() ;
-    return ret ;
+    ast ret = create_expr_list(exprs);
+    pop_error_context();
+    return ret;
 }
 
 /////////////////////////////////////////////////////////////////////////////
@@ -751,34 +1222,34 @@ static ast parse_expr_list()
 // ****  SYMBOL TABLES  ****
 
 // scope levels each have their own symbol tables, segment and next free location
-static jsymbols symbol_tables = nullptr ;
+static jsymbols symbol_tables = nullptr;
 
 // push a new symbol table onto the stack of symbol tables
 // remember statics or fields tables when first created
 static void push_symbol_table()
 {
-    symbol_tables = jsymbols_push(symbol_tables) ;
+    symbol_tables = jsymbols_push(symbol_tables);
 
-    switch(now_parsing)
+    switch (now_parsing)
     {
         // For Methods we need the argument segment offsets to start at 1
     case Method:
-        jsymbols_offset(symbol_tables,"argument") ;
-        break ;
+        jsymbols_offset(symbol_tables, "argument");
+        break;
 
         // For Class, Constructor and Function there is nothing else to do
     case Class:
     case Constructor:
     case Function:
     default:
-        break ;
+        break;
     }
 }
 
 // pop the top scope from the stack of symbol tables and delete it
 static void pop_symbol_table()
 {
-    symbol_tables = jsymbols_pop(symbol_tables) ;
+    symbol_tables = jsymbols_pop(symbol_tables);
 }
 
 // this function adds an identifier to the top symbol table on the symbol table stack
@@ -793,18 +1264,18 @@ static void pop_symbol_table()
 // . offset: the variable's position in it's segment
 // . type: the variable's type
 //
-static ast declare_variable(Token identifier,Token type,string varsegment)
+static ast declare_variable(Token identifier, Token type, string varsegment)
 {
-    string varname = token_spelling(identifier) ;
-    string vartype = token_spelling(type) ;
-    int varoffset = jsymbols_offset(symbol_tables,varsegment) ;
+    string varname = token_spelling(identifier);
+    string vartype = token_spelling(type);
+    int varoffset = jsymbols_offset(symbol_tables, varsegment);
 
-    if ( !jsymbols_insert(symbol_tables,varname,vartype,varsegment,varoffset) ) // it is an error to declare something twice
+    if (!jsymbols_insert(symbol_tables, varname, vartype, varsegment, varoffset)) // it is an error to declare something twice
     {
-        fatal_token_context(varname +  " has already been declared\n") ;
+        fatal_token_context(varname + " has already been declared\n");
     }
 
-    return create_var_dec(varname,varsegment,varoffset,vartype) ;
+    return create_var_dec(varname, varsegment, varoffset, vartype);
 }
 
 // lookup the identifier and return a tree node representing the variable
@@ -820,50 +1291,50 @@ static ast declare_variable(Token identifier,Token type,string varsegment)
 static ast lookup_variable(Token identifier)
 {
     // search symbol tables from top to bottom of the symbol table stack
-    string varname = token_spelling(identifier) ;
-    jack_var var = jsymbols_lookup(symbol_tables,varname) ;
-    if ( var != nullptr )
+    string varname = token_spelling(identifier);
+    jack_var var = jsymbols_lookup(symbol_tables, varname);
+    if (var != nullptr)
     {
         // functions have no object so they cannot access the "this" segment
-        if ( jack_var_segment(var) == "this" && now_parsing == Function ) return nullptr ;
+        if (jack_var_segment(var) == "this" && now_parsing == Function)
+            return nullptr;
 
-        return create_var(varname,jack_var_segment(var),jack_var_offset(var),jack_var_type(var)) ;
+        return create_var(varname, jack_var_segment(var), jack_var_offset(var), jack_var_type(var));
     }
 
-    return nullptr ;
+    return nullptr;
 }
 
 // lookup variable but report a fatal error if not found
 static ast lookup_variable_fatal(Token identifier)
 {
-    ast var = lookup_variable(identifier) ;
+    ast var = lookup_variable(identifier);
 
     // if not found report a fatal error
-    if ( var == nullptr )
+    if (var == nullptr)
     {
-        string varname = token_spelling(identifier) ;
-        fatal_token_context(varname + " must be a declared variable\n") ;
+        string varname = token_spelling(identifier);
+        fatal_token_context(varname + " must be a declared variable\n");
     }
 
-    return var ;
+    return var;
 }
 
 // **** MAIN PROGRAM ****
 
 // main program
-int main(int argc,char **argv)
+int main(int argc, char **argv)
 {
-    config_output(iob_immediate) ;      // make all output and errors appear immediately
-    config_errors(iob_immediate) ;      // this will be overridden by the test scripts
+    config_output(iob_immediate); // make all output and errors appear immediately
+    config_errors(iob_immediate); // this will be overridden by the test scripts
 
     // read the first token to get the tokeniser initialised
-    next_token() ;
+    next_token();
 
     // parse a Jack class and print the abstract syntax tree as XML
-    ast_print_as_xml(parse_class(),3) ;
+    ast_print_as_xml(parse_class(), 3);
 
     // flush the output and any errors
-    print_output() ;
-    print_errors() ;
+    print_output();
+    print_errors();
 }
-

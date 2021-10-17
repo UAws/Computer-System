@@ -17,6 +17,10 @@
    "False"
   ],
   [
+   "fmt:with_os_api",
+   "True"
+  ],
+  [
    "gtest:build_gmock",
    "True"
   ],

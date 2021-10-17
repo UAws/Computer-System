@@ -1,0 +1,22 @@
+class Main
+{
+    function void main()
+    {
+        var int a ;
+        var int b ;
+        var int c ;
+        var int d ;
+        var int e ;
+
+        let a = 0 * (45 / 0) | -1 ;
+        let b = d > d ;
+        let c = (b * X.x() / 0) & 0 ;
+        if (~(~(d = d)))
+        {
+            let d = Other.called() * 0 + 4 - (-1 * -45) ;
+            let e = b & b ;
+        }
+
+        return ;
+    }
+}

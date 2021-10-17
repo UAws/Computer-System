@@ -1,0 +1,64 @@
+function Main.main 10
+push constant 0
+not
+push constant 3
+push constant 2
+call Math.divide 2
+call Math.multiply 2
+push constant 0
+or
+pop local 0
+push constant 3452
+push constant 345
+not
+and
+pop local 1
+push local 1
+push constant 1
+call Math.divide 2
+call X.x 0
+call Math.multiply 2
+push constant 1
+call Math.divide 2
+push constant 1
+neg
+and
+pop local 2
+push constant 0
+not
+push local 4
+push local 4
+lt
+or
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+label IF_FALSE0
+label WHILE_EXP0
+call X.xx 0
+push constant 1
+call Math.divide 2
+push constant 7
+not
+gt
+not
+if-goto WHILE_END0
+call other.called 0
+neg
+neg
+push constant 1
+call Math.multiply 2
+push constant 3
+add
+push constant 45
+neg
+sub
+pop local 3
+push local 2
+push local 2
+or
+pop local 4
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return

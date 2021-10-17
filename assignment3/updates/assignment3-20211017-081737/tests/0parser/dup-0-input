@@ -1,0 +1,9 @@
+class Main
+{
+	field int a ;
+	field int a ;
+
+	function void main()
+	{
+	}
+}

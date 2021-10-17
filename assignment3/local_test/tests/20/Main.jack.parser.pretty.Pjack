@@ -1,0 +1,38 @@
+class Main
+{
+    static int A ;
+    static int B ;
+    static int C ;
+
+    field string z1 ;
+    field string z2 ;
+
+    function void main()
+    {
+        var int a ;
+        var int b ;
+        var int c ;
+        var int d ;
+        var int e ;
+        var int f ;
+        var int g ;
+        var int h ;
+        var int i ;
+        var int j ;
+
+        let a = ~0 * (3 / 2) | 0 ;
+        let b = 3452 & ~345 ;
+        let c = (b / 1 * X.x() / 1) & -1 ;
+        if (true | (e < e))
+        {
+        }
+
+        while (X.xx() / 1 > ~7)
+        {
+            let d = --other.called() * 1 + 3 - -45 ;
+            let e = c | c ;
+        }
+
+        return ;
+    }
+}

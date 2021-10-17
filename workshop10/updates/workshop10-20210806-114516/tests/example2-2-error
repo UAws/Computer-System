@@ -1,0 +1,6 @@
+
+ 3: let x = 1 ;
+ 4: let 
+    ^
+Found token "let" but expected "end of input"
+

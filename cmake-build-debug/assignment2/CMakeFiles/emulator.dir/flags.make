@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/akide/CLionProjects/cs-projects/include -I/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include -I/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include -I/Users/akide/CLionProjects/cs-projects/assignment2 -I/Users/akide/CLionProjects/cs-projects/assignment2/includes
+CXX_INCLUDES = -I/Users/akide/CLionProjects/cs-projects/include -I/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include -I/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include -I/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include -I/Users/akide/CLionProjects/cs-projects/assignment2 -I/Users/akide/CLionProjects/cs-projects/assignment2/includes
 
 CXX_FLAGS =  -std=c++17      -g   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -std=gnu++17
 

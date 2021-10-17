@@ -1,9 +1,9 @@
-"/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5284.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/akide/CLionProjects/cs-projects
+"/Users/akide/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/212.5457.51/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /Users/akide/CLionProjects/cs-projects
 -- Conan: Automatic detection of conan settings from cmake
 -- Conan: Settings= -s;build_type=Debug;-s;compiler=apple-clang;-s;compiler.version=12.0;-s;compiler.libcxx=libc++
 -- Conan: checking conan executable
 -- Conan: Found program /usr/local/bin/conan
--- Conan: Version found Conan version 1.40.1
+-- Conan: Version found Conan version 1.41.0
 
 -- Conan executing: /usr/local/bin/conan install . -s build_type=Debug -s compiler=apple-clang -s compiler.version=12.0 -s compiler.libcxx=libc++ -g=cmake --build=missing
 Configuration:
@@ -22,20 +22,20 @@ os_build=Macos
 
 conanfile.txt: Installing package
 Requirements
-    dbg-macro/0.4.0 from 'conan-center' - Cache
-    fmt/7.1.3 from 'conan-center' - Cache
-    gtest/1.11.0 from 'conan-center' - Cache
+    dbg-macro/0.4.0 from 'conancenter' - Cache
+    fmt/7.1.3 from 'conancenter' - Cache
+    gtest/1.11.0 from 'conancenter' - Cache
 Packages
     dbg-macro/0.4.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9 - Cache
-    fmt/7.1.3:ba203d82ae0020eccba7236c3748eb8f79fceaf6 - Cache
+    fmt/7.1.3:1d32a9e557444c06bb0cc3ab302313d195a47cb6 - Cache
     gtest/1.11.0:8ea16b5437d767794f13beec66099d7352875d19 - Cache
 
 Installing (downloading, building) binaries...
 dbg-macro/0.4.0: Already installed!
 fmt/7.1.3: Already installed!
 gtest/1.11.0: Already installed!
-conanfile.txt: Generator cmake created conanbuildinfo.cmake
 conanfile.txt: Generator txt created conanbuildinfo.txt
+conanfile.txt: Generator cmake created conanbuildinfo.cmake
 conanfile.txt: Aggregating env generators
 conanfile.txt: Generated conaninfo.txt
 conanfile.txt: Generated graphinfo
@@ -46,7 +46,7 @@ conanfile.txt: Generated graphinfo
 -- Library gmock_maind found /Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/lib/libgmock_maind.a
 -- Library gmockd found /Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/lib/libgmockd.a
 -- Library gtestd found /Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/lib/libgtestd.a
--- Library fmtd found /Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/lib/libfmtd.a
+-- Library fmtd found /Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/lib/libfmtd.a
 -- Conan: Adjusting default RPATHs Conan policies
 -- Conan: Adjusting language standard
 -- Current conanbuildinfo.cmake directory: /Users/akide/CLionProjects/cs-projects/cmake-build-debug

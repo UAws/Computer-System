@@ -1,0 +1,25 @@
+class Main
+{
+// public:
+  function void main()
+  {
+    if (true)
+    {
+    }
+
+    if (false)
+    {
+      if (true)
+      {
+      }
+      else
+      {
+      }
+    }
+    else
+    {
+    }
+
+    return ;
+  }
+}

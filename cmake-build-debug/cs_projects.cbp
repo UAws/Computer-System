@@ -5,7 +5,7 @@
 		<Option title="cs_projects"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\assignment3\;CMake Files\assignment2\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\assignment3\;CMake Files\workshop11\;CMake Files\assignment2\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/akide/CLionProjects/cs-projects/cmake-build-debug"/>
@@ -57,7 +57,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -84,7 +84,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -111,7 +111,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -138,7 +138,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -165,7 +165,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -192,7 +192,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -219,7 +219,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -246,7 +246,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment3/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -263,6 +263,114 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment3/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="workshop11_parser">
+				<Option output="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin/workshop11_parser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
+					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 workshop11_parser"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="workshop11_parser/fast">
+				<Option output="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin/workshop11_parser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
+					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 workshop11_parser/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="translator">
+				<Option output="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin/translator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
+					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 translator"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="translator/fast">
+				<Option output="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin/translator" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
+					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
+					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11"/>
+					<Add directory="/Users/akide/CLionProjects/cs-projects/workshop11/includes"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 translator/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/Users/akide/CLionProjects/cs-projects/cmake-build-debug/workshop11/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="emulator">
 				<Option output="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment2/bin/emulator" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/akide/CLionProjects/cs-projects/cmake-build-debug/assignment2/bin"/>
@@ -273,7 +381,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment2"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment2/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -300,7 +408,7 @@
 					<Add directory="/Users/akide/CLionProjects/cs-projects/include"/>
 					<Add directory="/Users/akide/.conan/data/dbg-macro/0.4.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"/>
 					<Add directory="/Users/akide/.conan/data/gtest/1.11.0/_/_/package/8ea16b5437d767794f13beec66099d7352875d19/include"/>
-					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/ba203d82ae0020eccba7236c3748eb8f79fceaf6/include"/>
+					<Add directory="/Users/akide/.conan/data/fmt/7.1.3/_/_/package/1d32a9e557444c06bb0cc3ab302313d195a47cb6/include"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment2"/>
 					<Add directory="/Users/akide/CLionProjects/cs-projects/assignment2/includes"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -333,6 +441,12 @@
 		<Unit filename="/Users/akide/CLionProjects/cs-projects/assignment3/pretty.cpp">
 			<Option target="pretty"/>
 		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/cs-projects/workshop11/parser.cpp">
+			<Option target="workshop11_parser"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/cs-projects/workshop11/translator.cpp">
+			<Option target="translator"/>
+		</Unit>
 		<Unit filename="/Users/akide/CLionProjects/cs-projects/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
@@ -344,6 +458,9 @@
 		</Unit>
 		<Unit filename="/Users/akide/CLionProjects/cs-projects/assignment3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment3\"/>
+		</Unit>
+		<Unit filename="/Users/akide/CLionProjects/cs-projects/workshop11/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\workshop11\"/>
 		</Unit>
 		<Unit filename="/Users/akide/CLionProjects/cs-projects/assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\assignment2\"/>

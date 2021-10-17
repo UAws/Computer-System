@@ -1,5 +1,11 @@
 
 ***** Fatal error!
     0: parse_class()
-error: nullptr passed to jsymbols_pop
+    1: parse_field_var_decs()
+    2: parse_field_var_dec()
+error: ***** Error:
+ 3:         field int a ;
+ 4:         field int a ;
+                        ^
+a has already been declared
 
