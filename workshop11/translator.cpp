@@ -212,7 +212,6 @@ static void walk_if_else(ast n)
     write_to_output("if-goto IF_TRUE" + label + "\n");
     write_to_output("goto IF_FALSE" + label + "\n");
     write_to_output("label IF_TRUE" + label + "\n");
-
     walk_sequence(get_if_else_if_true(n)) ;
     write_to_output("goto IF_END" + label + "\n");
 

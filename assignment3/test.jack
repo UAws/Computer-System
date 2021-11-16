@@ -1,13 +1,9 @@
 class Main {
-    static int x;
+    static int d;
 
     function string main() {
-        if (~(0)){
-            return "1111111111";
-        } else{
-            return "2222222222";
-        }
-
+	var int x,y;
+	let d = (2-x)+(y+9);
         return 3;
     }
 }

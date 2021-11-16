@@ -1,6 +1,0 @@
-[requires]
-dbg-macro/0.4.0
-gtest/1.11.0
-fmt/7.1.3
-[generators]
-cmake
