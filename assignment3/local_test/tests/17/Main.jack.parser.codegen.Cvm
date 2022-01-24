@@ -1,7 +1,0 @@
-function Main.main 1
-push constant 3
-neg
-neg
-pop local 0
-push constant 0
-return

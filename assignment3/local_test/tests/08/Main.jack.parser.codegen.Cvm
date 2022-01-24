@@ -1,8 +1,0 @@
-function Main.returnaa 0
-push static 0
-return
-function Main.main 0
-call Main.returnaa 0
-pop static 1
-push constant 0
-return

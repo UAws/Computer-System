@@ -1,3 +1,0 @@
-function Main.main 2
-push constant 0
-return
